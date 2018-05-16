@@ -313,7 +313,6 @@
           \caption{2桁の2進数の加算回路図}
         \end{center}
       \end{figure}
-
     \end{enumerate}
 \subsection{順序回路}
   順序回路とは,組み合わせ回路の時刻$t+1$の時の出力$Y_{t+1}$が,時刻$t$のときの出力
@@ -322,7 +321,51 @@
   % Dラッチ回路
     \begin{enumerate}
       \item 基本動作
+      % 基本動作
+      Dラッチ回路は,RSラッチ(Reset入力とSet入力を持つラッチ)の前段にデータ記憶用の
+      ゲートを追加し,入力したDataを止めるため,つまりラッチするための信号である
+      ストローブ入力を備えている.つまり,Dラッチは,ストローブ入力によりデータをRSラッチ
+      にいつ記憶させるかを制御している.回路図を図8に,動作表を表10に,タイムチャートを図9に示した.
+      % 図8
+      \begin{figure}[H]
+        \begin{center}
+          \includegraphics[width=7cm]{../img/junjokairo/d_ratch.png}
+          \caption{Dラッチの回路図}
+        \end{center}
+      \end{figure}
+      % 表10
+      \begin{table}[H]
+        \centering
+        \caption{Dラッチの動作表}
+        \label{my-label}
+          \begin{tabular}{l|ll|ll}
+              & 入力      &                                 & 出力                           &                                      \\ \hline
+          接続端子 & $S_{1}$ & $S_{0}$                         & $L_{1}$ & $L_{0}$                              \\ \hline
+          端子名  & Data    & $\overline{Stb}$              & Q       & $\overline{Q}$        \\ \hline
+          電圧   & L       & L                               & $Q_{0}$ & $\overline{Q_{0}}$ \\
+              & H       & L                               & $Q_{0}$ & $\overline{Q_{0}}$ \\
+              & L       & H                               & L       & H                                    \\
+              & H       & H                               & H       & L                                   
+          \end{tabular}
+      \end{table}
+      % 図9
+      \begin{figure}[H]
+        \begin{center}
+          \includegraphics[width=7cm]{../img/junjokairo/d_ratchTimeChart.png}
+          \caption{Dラッチのタイムチャート}
+        \end{center}
+      \end{figure}
       \item 考察
+        % 考察
+        \begin{enumerate}
+          \item ストローブ信号がHのとき,Data信号の出力をQは受けとって出力していた.
+          \item ストローブ信号がLのとき,Data信号の出力に関わらず,前の状態を維持していた. 
+          \item Data信号が動いているときに,ストローブ信号をHからLにしたとき,
+          Data信号の動きに関わらず出力Qの状態は変わらなかった.
+          \item 以上の(a)-(b)より,ストローブ信号の機能は,Data信号を出力に伝える機能であった.
+          ラッチ機能は,ストローブ機能がLのときに,Data信号を止めて,もしData信号が変わっても
+          受け取らないようにするための機能であった.
+        \end{enumerate}
     \end{enumerate}
   \subsubsection{フリップフロップ回路}
   % フリップフロップ回路
