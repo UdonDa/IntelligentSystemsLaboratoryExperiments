@@ -149,17 +149,17 @@
   まず,エンコーダの真理値表を表5に,論理式を(6),(7)に,回路図を図4に示した.
   % 表5
   \begin{table}[H]
-    \centering
-    \caption{エンコーダの真理値表}
-    \label{my-label}
-      \begin{tabular}{l|ll|llll}
-          & 入力      &         &         &         & 出力      &         \\ \hline
-      端子名 & $S_{0}$ & $S_{1}$ & $S_{2}$ & $S_{3}$ & $L_{1}$ & $L_{0}$ \\ \hline
-          & 1       & 0       & 0       & 0       & hoge    & hoge    \\
-      真理値 & 0       & 1       & 0       & 0       & hoge    & hoge    \\
-          & 0       & 0       & 1       & 0       & hoge    & hoge    \\
-          & 0       & 0       & 0       & 1       & hoge    & hoge   
-      \end{tabular}
+  \centering
+  \caption{エンコーダの真理値表}
+  \label{my-label}
+  \begin{tabular}{l|llll|ll}
+      & 入力      &         &         &         & 出力      &         \\ \hline
+  端子名 & $S_{0}$ & $S_{1}$ & $S_{2}$ & $S_{3}$ & $L_{1}$ & $L_{0}$ \\ \hline
+      & 1       & 0       & 0       & 0       & hoge    & hoge    \\
+  真理値 & 0       & 1       & 0       & 0       & hoge    & hoge    \\
+      & 0       & 0       & 1       & 0       & hoge    & hoge    \\
+      & 0       & 0       & 0       & 1       & hoge    & hoge   
+  \end{tabular}
   \end{table}
   % 論理式
   \begin{center}
@@ -170,7 +170,54 @@
 \subsection{加算回路}
 % 加算回路
   \subsubsection{加算回路の機能}
+    半加算機は,2進数の足し算,つまり2つの入力AとBを加算し,その和S(Sum)と桁上げC(Carry)を出力する.
+    半加算機の真理値表,動作表を表6,7に,回路図を図5に,動作確認表を表7に,論理式を(8),(9)に示した.
+    % 表6
+    \begin{table}[]
+      \centering
+      \caption{半加算器の真理値表}
+      \label{my-label}
+      \begin{tabular}{l|ll|ll|}
+          & 入力 &   & 出力 &     \\ \cline{4-5} 
+          &  &   & 和  & 桁上げ \\ \hline
+      端子名 & A  & B & S  & C   \\ \hline
+      真理値 & 0  & 0 & 0  & 0   \\
+          & 0  & 1 & 1  & 0   \\
+          & 1  & 0 & 1  & 0   \\
+          & 1  & 1 & 0  & 1  
+      \end{tabular}
+    \end{table}
+    % 図5
+    \begin{figure}[H]
+      \begin{center}
+        \includegraphics[width=7cm]{../img/half_adder/half_ader_kairo.png}
+        \caption{半加算機の回路図}
+      \end{center}
+    \end{figure}
+    % 表7
+    \begin{table}[H]
+      \centering
+      \caption{半加算機の動作表}
+      \label{my-label}
+        \begin{tabular}{l|ll|ll|}
+            & 入力      &         & 出力      &         \\ \cline{4-5} 
+            &         &         & 和       & 桁上げ     \\ \hline
+        接続端子 & $S_{0}$ & $S_{1}$ & $L_{0}$ & $L_{1}$ \\ \hline
+        端子名  & A       & B       & S       & C       \\ \hline
+        電圧   & L       & L       & L       & L       \\
+            & L       & H       & H       & L       \\
+            & H       & L       & H       & L       \\
+            & H       & H       & L       & H      
+        \end{tabular}
+    \end{table}
+    \begin{center}
+      $S = A \oplus B$\quad(8) \\
+      $C = A・B$\quad(9) \\  
+    \end{center}
   \subsubsection{考察}
+    % 考察
+    和SがEX-OR,桁上げCがANDとなっており,$A=B=1$の時に,$S=0$,$C=1$となり,
+    桁上げが行えた.
   \subsubsection{課題}
     \begin{enumerate}
     \item 機能説明
