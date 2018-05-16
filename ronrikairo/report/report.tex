@@ -320,7 +320,7 @@
   \subsubsection{Dラッチ回路}
   % Dラッチ回路
     \begin{enumerate}
-      \item 基本動作
+      \item 基本動作 \\
       % 基本動作
       Dラッチ回路は,RSラッチ(Reset入力とSet入力を持つラッチ)の前段にデータ記憶用の
       ゲートを追加し,入力したDataを止めるため,つまりラッチするための信号である
@@ -372,14 +372,91 @@
     \begin{enumerate}
       \item J-Kフリップフロップ回路(74HC112)
         \begin{enumerate}
-          \item 基本動作
-          \item 実験
-          \item 考察    
+          \item 基本動作 \\
+            J-Kフリップフロップ回路とは,入力端子J,Kの組み合わせにより,
+            出力端子Q,その反転出力である$\overline{Q}$にクロックを同期して新しい状態を出力できる回路である.
+            基本動作は,リセット,セット,維持,反転の4パターンである.回路図を図10に,動作表を表11に示した.
+            % 図10
+            \begin{figure}[H]
+              \begin{center}
+                \includegraphics[width=7cm]{../img/junjokairo/jk_flip_flop.png}
+                \caption{J-Kフリップフロップ回路の回路図}
+              \end{center}
+            \end{figure}
+            % 表11
+            \begin{table}[H]
+              \centering
+              \caption{J-Kフリップフロップ回路の回路図の入出力端子を動作表}
+              \label{my-label}
+                \footnotesize
+                \begin{tabular}{lllll|ll|ll}
+                入力      &         &         &         &     & 出力      &         & 機能        \\ \cline{1-7}
+                $S_{0}$ & $S_{1}$ & $S_{2}$ & $S_{3}$ & DA  & $L_{1}$ & $L_{0}$ &               \\ \cline{1-7}
+                $\overline{CLR}$  & $\overline{PR}$   & J   & K       & $\overline{CLK}$ & Q & $\overline{Q}$ &  \\ \hline
+                L       & H       & x       & x       & x   & L       & H       & クリア(Q→L)  \\
+                H       & L       & x       & x       & x   & H       & L       & プリセット(Q→H)  \\
+                L       & L       & x       & x       & x   & H*      & H*      & 不定.通常使用しない  \\
+                H       & H       & L       & L       & ↓   & $Q_{0}$ & $\overline{Q_{0}}$ & $t_{0}$の状態を保持 \\
+                H       & H       & L       & H       & ↓   & L       & H       & ラッチ J→Q \\
+                H       & H       & H       & L       & ↓   & H       & L       & K→Q \\
+                H       & H       & H       & H       & ↓   & $\overline{Q_{0}}$ & $Q_{0}$ & トグル \\
+                H       & H       & x       & x       & H   & $Q_{0}$ & $\overline{Q_{0}}$ & $t_{0}$の状態を保持 
+                \end{tabular}
+            \end{table}
+          \item 実験 \\
+            図11に,タイムチャートに従って入力端子を操作したときの出力Q,$\overline{Q}$を示した.
+            % 図11
+            \begin{figure}[H]
+              \begin{center}
+                \includegraphics[width=7cm]{../img/junjokairo/jk_flip_flop_time_chart.png}
+                \caption{J-Kフリップフロップ回路のタイムチャート}
+              \end{center}
+            \end{figure}
+          \item 考察 \\
+            % 考察
+            出力Q,$\overline{Q}$は,$\overline{CLR}$がHの状態で$\overline{PR}$がLになったとき,H,Lになった.
+            逆に,$\overline{PR}$がHの状態で$\overline{CLR}$がLになったとき,L,Hになった.
+            つまりこの2点から,$\overline{CLR}$はLになると,QをLに,$\overline{Q}$をHに変え,
+            $\overline{PR}$はLになると,QをHに,$\overline{Q}$をLに変えていると考えられた.
+            $\overline{CLR}$,$\overline{PR}$をHの状態のまま,JをH,KをLの状態にして,
+            $\overline{CLK}$をLにすると,QがH,$\overline{Q}$がLになったことより,
+            タイムチャート前半の$\overline{PR}$の機能を呼び出せられると考えられた.
+            また,その状態のままJをL,KをHの状態にして,$\overline{CLK}$をLにすると,
+            $\overline{CLR}$の機能を呼び出せられると考えられた.
+            J,Kを両方Hにすると,$\overline{CLK}$をLにする度,前の状態が復元されると考えられた.
         \end{enumerate}
       \item Dフリップフロップ回路(74HC74)を用いた$1/2$分周器
         \begin{enumerate}
-          \item 基本動作
           \item 実験
+          % 実験
+          Dフリップフロップの動作表を表12に,Dフリップフロップ回路を用いた1/2分周器の回路図を図12に,
+          動作表を表13に,タイムチャートを図13に示した
+          % 表12
+          \begin{table}[H]
+            \centering
+            \caption{My caption}
+            \label{my-label}
+            \footnotesize
+            \begin{tabular}{llll|ll|l}
+            入力  &    &   &     & 出力 &    & 機能         \\ \hline
+            $\overline{CLR}$ & $\overline{PR}$ & D & CLK & Q  & $\overline{Q}$ &            \\ \hline
+            L   & H  & x & x   & L  & H  & クリア   \\
+            H   & L  & x & x   & H  & L  & プリセット \\
+            L   & L  & x & x   & H* & H* & 不定         \\
+            H   & H  & L & ↑   & L  & H  & D→Q        \\
+            H   & H  & H & ↑   & H  & L  & D→Q        \\
+            H   & H  & x & L   & $Q_{0}$ & $\overline{Q_{0}}$ & $t_{0}$の状態を保持  
+            \end{tabular}
+          \end{table}
+          % 図12
+          \begin{figure}[H]
+              \begin{center}
+                \includegraphics[width=7cm]{../img/junjokairo/d_ff.png}
+                \caption{Dフリップフロップ回路分周器の回路図}
+              \end{center}
+          \end{figure}
+          % 表13
+          % 図13
           \item 考察
         \end{enumerate}
     \end{enumerate}

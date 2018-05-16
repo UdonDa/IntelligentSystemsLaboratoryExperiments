@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.14159265-p3.7.1-161114-2.6 (utf8.euc) (TeX Live 2017) (preloaded format=platex 2018.4.23)  17 MAY 2018 00:22
+This is e-pTeX, Version 3.14159265-p3.7.1-161114-2.6 (utf8.euc) (TeX Live 2017) (preloaded format=platex 2018.4.23)  17 MAY 2018 02:14
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -145,41 +145,8 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \float@box=\box45
 \@float@everytoks=\toks22
 \@floatcapt=\box46
-) (./report.aux
-
-LaTeX Warning: Label `my-label' multiply defined.
-
-
-LaTeX Warning: Label `my-label' multiply defined.
-
-
-LaTeX Warning: Label `my-label' multiply defined.
-
-
-LaTeX Warning: Label `my-label' multiply defined.
-
-
-LaTeX Warning: Label `my-label' multiply defined.
-
-
-LaTeX Warning: Label `my-label' multiply defined.
-
-
-LaTeX Warning: Label `my-label' multiply defined.
-
-
-LaTeX Warning: Label `my-label' multiply defined.
-
-
-LaTeX Warning: Label `' multiply defined.
-
-
-LaTeX Warning: Label `' multiply defined.
-
-
-LaTeX Warning: Label `my-label' multiply defined.
-
 )
+No file report.aux.
 \openout1 = `report.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 9.
@@ -217,7 +184,7 @@ LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
 LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
 (Font)              scaled to size 9.60999pt on input line 22.
 File: ../img/ex_or/ex-or_kairo.png Graphic file (type bmp)
- <../img/ex_or/ex-or_kairo.png>
+<../img/ex_or/ex-or_kairo.png>
 LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
 (Font)              scaled to size 8.64899pt on input line 34.
 LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
@@ -283,18 +250,32 @@ File: ../img/junjokairo/d_ratchTimeChart.png Graphic file (type bmp)
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [4]
-[5] (./report.aux)
+File: ../img/junjokairo/jk_flip_flop.png Graphic file (type bmp)
 
-LaTeX Warning: There were multiply-defined labels.
+<../img/junjokairo/jk_flip_flop.png>
+Overfull \hbox (50.71928pt too wide) in paragraph at lines 392--405
+ [][][][] 
+ []
+
+File: ../img/junjokairo/jk_flip_flop_time_chart.png Graphic file (type bmp)
+<../img/junjokairo/jk_flip_flop_time_chart.png> [5]
+Overfull \hbox (7.13123pt too wide) in paragraph at lines 440--450
+ [][][][] 
+ []
+
+File: ../img/junjokairo/d_ff.png Graphic file (type bmp)
+<../img/junjokairo/d_ff.png> [6] (./report.aux)
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
  ) 
 Here is how much of TeX's memory you used:
- 1626 strings out of 493653
- 20012 string characters out of 6148874
+ 1633 strings out of 493653
+ 20305 string characters out of 6148874
  97736 words of memory out of 5000000
- 5207 multiletter control sequences out of 15000+600000
+ 5213 multiletter control sequences out of 15000+600000
  15666 words of font info for 69 fonts, out of 8000000 for 9000
  934 hyphenation exceptions out of 8191
- 27i,10n,21p,294b,403s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 27i,11n,21p,294b,453s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on report.dvi (5 pages, 24152 bytes).
+Output written on report.dvi (6 pages, 30288 bytes).
