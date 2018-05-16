@@ -2,7 +2,6 @@
 \usepackage{amsmath}
 \usepackage[dvipdfmx]{graphicx}
 \usepackage{url}
-\usepackage[dvipdfmx]{graphicx}
 \usepackage{here}
 \title{\vspace{-2.5cm}8. 論理回路}
 \author{1610581 堀田 大地}
@@ -145,7 +144,7 @@
   エンコーダは10進数を2進数に変換する回路である.
   この課題では,10進数から0から3をそれぞれに対応する4つのスイッチ($S_{0}$,$S_{1}$,$S_{2}$,$S_{3}$)
   を使って入力し,2つのLED($L_{0}$,$L_{1}$)を使って2ビットの2進数を出力するエンコーダ回路を
-  設計し作成する.
+  設計し作成した.
   まず,エンコーダの真理値表を表5に,論理式を(6),(7)に,回路図を図4に示した.
   % 表5
   \begin{table}[H]
@@ -155,10 +154,10 @@
   \begin{tabular}{l|llll|ll}
       & 入力      &         &         &         & 出力      &         \\ \hline
   端子名 & $S_{0}$ & $S_{1}$ & $S_{2}$ & $S_{3}$ & $L_{1}$ & $L_{0}$ \\ \hline
-      & 1       & 0       & 0       & 0       & hoge    & hoge    \\
-  真理値 & 0       & 1       & 0       & 0       & hoge    & hoge    \\
-      & 0       & 0       & 1       & 0       & hoge    & hoge    \\
-      & 0       & 0       & 0       & 1       & hoge    & hoge   
+      & 1       & 0       & 0       & 0       & 0    & 0    \\
+  真理値 & 0       & 1       & 0       & 0       & 0    & 1    \\
+      & 0       & 0       & 1       & 0       & 1    & 0    \\
+      & 0       & 0       & 0       & 1       & 1    & 1   
   \end{tabular}
   \end{table}
   % 論理式
@@ -166,16 +165,22 @@
     $L_{0} = S_{1}+S_{3}$\quad(6) \\
     $L_{1} = S_{2}+S_{3}$\quad(7) \\
   \end{center}
-  % 図4(TODO: あとでエンコーダ回路を設計する)
+  % 図4
+  \begin{figure}[H]
+    \begin{center}
+      \includegraphics[width=7cm]{../img/half_adder/encoder.png}
+      \caption{4入力2出力エンコーダの回路図}
+    \end{center}
+  \end{figure}
 \subsection{加算回路}
 % 加算回路
   \subsubsection{加算回路の機能}
-    半加算機は,2進数の足し算,つまり2つの入力AとBを加算し,その和S(Sum)と桁上げC(Carry)を出力する.
-    半加算機の真理値表,動作表を表6,7に,回路図を図5に,動作確認表を表7に,論理式を(8),(9)に示した.
+    ハーフ・アダーは,2進数の足し算,つまり2つの入力AとBを加算し,その和S(Sum)と桁上げC(Carry)を出力する.
+    ハーフ・アダーの真理値表,動作表を表6,7に,回路図を図5に,動作確認表を表7に,論理式を(8),(9)に示した.
     % 表6
     \begin{table}[]
       \centering
-      \caption{半加算器の真理値表}
+      \caption{ハーフ・アダーの真理値表}
       \label{my-label}
       \begin{tabular}{l|ll|ll|}
           & 入力 &   & 出力 &     \\ \cline{4-5} 
@@ -191,13 +196,13 @@
     \begin{figure}[H]
       \begin{center}
         \includegraphics[width=7cm]{../img/half_adder/half_ader_kairo.png}
-        \caption{半加算機の回路図}
+        \caption{ハーフ・アダーの回路図}
       \end{center}
     \end{figure}
     % 表7
     \begin{table}[H]
       \centering
-      \caption{半加算機の動作表}
+      \caption{ハーフ・アダーの動作表}
       \label{my-label}
         \begin{tabular}{l|ll|ll|}
             & 入力      &         & 出力      &         \\ \cline{4-5} 
@@ -219,10 +224,96 @@
     和SがEX-OR,桁上げCがANDとなっており,$A=B=1$の時に,$S=0$,$C=1$となり,
     桁上げが行えた.
   \subsubsection{課題}
+    コンピュータの内部では,複数桁同士の2進数の加算が行われている.
+    この課題では,そのような計算を実現させるために,2桁の2進数の$A_{0}$,$A_{1}$と
+    $B_{0}$,$B_{1}$との加算を行う回路を作成した.
     \begin{enumerate}
     \item 機能説明
+      % 機能説明
+      2桁2進数の計算が行える.そのために,1桁目の加算を行い,次に2桁目の加算を実現させるために,1桁目はハーフ・アダー,
+      2桁目は下位からの桁上げを考慮して入力できる全加算機を使った.
     \item フル・アダーの回路設計
+      フル・アダーの真理値表を表8に,論理式を(10),(11)に,回路図を図6に示した.
+      % 表8
+      \begin{table}[H]
+        \centering
+        \caption{フル・アダーの真理値表}
+        \label{my-label}
+        \begin{tabular}{l|lll|ll}
+            & 入力 &   &          & 出力 &           \\ \cline{5-6} 
+            &    &   &          & 和  & 桁上げ       \\ \hline
+        端子名 & A  & B & $C_{in}$ & S  & $C_{out}$ \\ \hline
+        電圧  & 0  & 0 & 0        & 0  & 0         \\
+            & 0  & 1 & 0        & 1  & 0         \\
+            & 1  & 0 & 0        & 1  & 0         \\
+            & 1  & 1 & 0        & 0  & 1         \\
+            & 0  & 0 & 1        & 1  & 0         \\
+            & 0  & 1 & 1        & 0  & 1         \\
+            & 1  & 0 & 1        & 0  & 1         \\
+            & 1  & 1 & 1        & 1  & 1        
+        \end{tabular}
+      \end{table}
+      % 論理式
+      \begin{center}
+        \begin{eqnarray*}
+          S &=& \overline{A}・B・\overline{C_{in}} + A・\overline{B}・\overline{C_{in}}
+           + \overline{A}・\overline{B}・C_{in} + A・B・C_{in} \\
+          &=& (A \oplus B) \oplus C_{in} \quad(10) \\
+        \end{eqnarray*}
+        \begin{eqnarray*}
+          C_{out} &=& A・B・\overline{C_{in}} + \overline{A}・B・C_{in}
+           + A・\overline{B}・C_{in} + A・B・C_{in} \\
+          &=& A・B + (A \oplus B)・C_{in} \quad(11) \\
+        \end{eqnarray*}
+      \end{center}
+      % 図6
+      \begin{figure}[H]
+        \begin{center}
+          \includegraphics[width=7cm]{../img/half_adder/fullAdder.png}
+          \caption{フル・アダーの回路図}
+        \end{center}
+      \end{figure}
     \item 2桁の2進数の加算回路の設計
+      真理値表を表9に,論理式を(12)-(14)に,回路図を図7に示した.
+      % 表9
+      \begin{table}[H]
+      \centering
+      \caption{2桁の2進数の加算回路の真理値表}
+      \label{my-label}
+        \footnotesize
+        \begin{tabular}{l|llll|lll}
+            & 入力      &         &         &         & 出力      &         &         \\ \cline{6-8} 
+            &         &         &         &         & 3桁目     & 2桁目     & 1桁目     \\ \hline
+        端子名 & $A_{1}$ & $A_{0}$ & $B_{1}$ & $B_{0}$ & $C_{2}$ & $S_{1}$ & $S_{0}$ \\ \hline
+        真理値 & 0       & 0       & 0       & 0       & 0       & 0       & 0       \\
+            & 0       & 1       & 0       & 0       & 0       & 0       & 1       \\
+            & 1       & 0       & 0       & 0       & 0       & 1       & 0       \\
+            & 1       & 1       & 0       & 0       & 0       & 1       & 1       \\
+            & 0       & 0       & 0       & 1       & 0       & 0       & 1       \\
+            & 0       & 1       & 0       & 1       & 0       & 1       & 0       \\
+            & 1       & 0       & 0       & 1       & 0       & 1       & 1       \\
+            & 1       & 1       & 0       & 1       & 1       & 0       & 0       \\
+            & 0       & 0       & 1       & 0       & 0       & 1       & 0       \\
+            & 0       & 1       & 1       & 0       & 0       & 1       & 1       \\
+            & 1       & 0       & 1       & 0       & 1       & 0       & 0       \\
+            & 1       & 1       & 1       & 0       & 1       & 0       & 1       \\
+            & 0       & 0       & 1       & 1       & 0       & 1       & 1       \\
+            & 0       & 1       & 1       & 1       & 1       & 0       & 0       \\
+            & 1       & 0       & 1       & 1       & 1       & 0       & 1       \\
+            & 1       & 1       & 1       & 1       & 1       & 1       & 0      
+        \end{tabular}
+      \end{table}
+      $S_{0} = A_{0} \oplus B_{0} $\quad(12) \\
+      $S_{1} = A_{0}・(A_{1} \oplus B_{1} \oplus B_{0}) + \overline{A_{0}}・(A_{1} \oplus B_{1})$ \quad(13) \\
+      $C_{2} = A_{0}・B_{0}(A_{1} \oplus B_{1}) + A_{1}・B_{1}$ \quad(14) \\
+      % 図7
+      \begin{figure}[H]
+        \begin{center}
+          \includegraphics[width=7cm]{../img/half_adder/ronri.png}
+          \caption{2桁の2進数の加算回路図}
+        \end{center}
+      \end{figure}
+
     \end{enumerate}
 \subsection{ラッチ回路}
 % ラッチ回路

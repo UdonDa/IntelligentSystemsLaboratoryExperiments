@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.14159265-p3.7.1-161114-2.6 (utf8.euc) (TeX Live 2017) (preloaded format=platex 2018.4.23)  16 MAY 2018 17:40
+This is e-pTeX, Version 3.14159265-p3.7.1-161114-2.6 (utf8.euc) (TeX Live 2017) (preloaded format=platex 2018.4.23)  16 MAY 2018 23:14
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -149,58 +149,58 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 No file report.aux.
 \openout1 = `report.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 10.
-LaTeX Font Info:    ... okay on input line 10.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 10.
-LaTeX Font Info:    ... okay on input line 10.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 10.
-LaTeX Font Info:    ... okay on input line 10.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 10.
-LaTeX Font Info:    ... okay on input line 10.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 10.
-LaTeX Font Info:    ... okay on input line 10.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 10.
-LaTeX Font Info:    ... okay on input line 10.
-LaTeX Font Info:    Checking defaults for JY1/mc/m/n on input line 10.
-LaTeX Font Info:    ... okay on input line 10.
-LaTeX Font Info:    Checking defaults for JT1/mc/m/n on input line 10.
-LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for JY1/mc/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for JT1/mc/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
 LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
-(Font)              scaled to size 16.60605pt on input line 11.
+(Font)              scaled to size 16.60605pt on input line 10.
 LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
-(Font)              scaled to size 16.60605pt on input line 11.
+(Font)              scaled to size 16.60605pt on input line 10.
 LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
-(Font)              scaled to size 11.53198pt on input line 11.
+(Font)              scaled to size 11.53198pt on input line 10.
 LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
-(Font)              scaled to size 11.53198pt on input line 11.
+(Font)              scaled to size 11.53198pt on input line 10.
 LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
-(Font)              scaled to size 5.76599pt on input line 11.
+(Font)              scaled to size 5.76599pt on input line 10.
 LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
-(Font)              scaled to size 11.53198pt on input line 12.
+(Font)              scaled to size 11.53198pt on input line 11.
 LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
-(Font)              scaled to size 11.53198pt on input line 12.
+(Font)              scaled to size 11.53198pt on input line 11.
 LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
-(Font)              scaled to size 9.60999pt on input line 23.
+(Font)              scaled to size 9.60999pt on input line 22.
 LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
-(Font)              scaled to size 9.60999pt on input line 23.
+(Font)              scaled to size 9.60999pt on input line 22.
 File: ../img/ex_or/ex-or_kairo.png Graphic file (type bmp)
 <../img/ex_or/ex-or_kairo.png>
 LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
-(Font)              scaled to size 8.64899pt on input line 35.
+(Font)              scaled to size 8.64899pt on input line 34.
 LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
-(Font)              scaled to size 8.64899pt on input line 35.
+(Font)              scaled to size 8.64899pt on input line 34.
 
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 39.
+               Default added (so using `tbp') on input line 38.
 
 LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
-(Font)              scaled to size 6.72699pt on input line 43.
+(Font)              scaled to size 6.72699pt on input line 42.
 LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
-(Font)              scaled to size 4.805pt on input line 43.
+(Font)              scaled to size 4.805pt on input line 42.
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 54.
+               Default added (so using `tbp') on input line 53.
 
 File: ../img/ex_or/nand_ex_or_kairo.png Graphic file (type bmp)
 <../img/ex_or/nand_ex_or_kairo.png> [1
@@ -211,28 +211,50 @@ File: ../img/decoda/input2_decoda.png Graphic file (type bmp)
  <../img/decoda/input2_decoda.png>
 Underfull \vbox (badness 1297) has occurred while \output is active []
 
+File: ../img/half_adder/encoder.png Graphic file (type bmp)
 
+<../img/half_adder/encoder.png>
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 176.
+               Default added (so using `tbp') on input line 181.
 
 File: ../img/half_adder/half_ader_kairo.png Graphic file (type bmp)
-<../img/half_adder/half_ader_kairo.png>
+<../img/half_adder/half_ader_kairo.png> [2]
+Overfull \hbox (43.53767pt too wide) in alignment at lines 258--262
+ [][][] []
+ []
+
+
+Overfull \hbox (66.1727pt too wide) in alignment at lines 263--267
+ [][][] []
+ []
+
+File: ../img/half_adder/fullAdder.png Graphic file (type bmp)
+<../img/half_adder/fullAdder.png>
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [2]
-[3] (./report.aux)
+ [3]
+Overfull \hbox (15.5089pt too wide) in paragraph at lines 284--305
+ [][][][] 
+ []
+
+File: ../img/half_adder/ronri.png Graphic file (type bmp)
+<../img/half_adder/ronri.png>
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [4]
+(./report.aux)
 
 LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
  ) 
 Here is how much of TeX's memory you used:
- 1607 strings out of 493653
- 19476 string characters out of 6148874
- 97692 words of memory out of 5000000
- 5197 multiletter control sequences out of 15000+600000
+ 1616 strings out of 493653
+ 19737 string characters out of 6148874
+ 97736 words of memory out of 5000000
+ 5203 multiletter control sequences out of 15000+600000
  15666 words of font info for 69 fonts, out of 8000000 for 9000
  934 hyphenation exceptions out of 8191
- 27i,10n,21p,294b,334s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 27i,10n,21p,294b,403s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on report.dvi (3 pages, 14524 bytes).
+Output written on report.dvi (4 pages, 20476 bytes).
