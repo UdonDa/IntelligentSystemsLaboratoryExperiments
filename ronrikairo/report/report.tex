@@ -231,7 +231,7 @@
     \item 機能説明
       % 機能説明
       2桁2進数の計算が行える.そのために,1桁目の加算を行い,次に2桁目の加算を実現させるために,1桁目はハーフ・アダー,
-      2桁目は下位からの桁上げを考慮して入力できる全加算機を使った.
+      2桁目は下位からの桁上げを考慮して入力できる全加算器を使った.
     \item フル・アダーの回路設計
       フル・アダーの真理値表を表8に,論理式を(10),(11)に,回路図を図6に示した.
       % 表8
@@ -315,22 +315,39 @@
       \end{figure}
 
     \end{enumerate}
-\subsection{ラッチ回路}
-% ラッチ回路
-  \subsubsection{ラッチ回路の機能}
-  \subsubsection{考察}
-\subsection{J-Kフリップフロップ回路}
-% フリップフロップ回路
-  \subsubsection{J-Kフリップフロップ回路の機能}
-  \subsubsection{考察}
-\subsection{Dフリップフロップ回路}
-% Dフリップフロップ回路
-  \subsubsection{Dフリップフロップ回路の機能}
-  \subsubsection{考察}
-\subsection{非同期16進カウンタ回路}
+\subsection{順序回路}
+  順序回路とは,組み合わせ回路の時刻$t+1$の時の出力$Y_{t+1}$が,時刻$t$のときの出力
+  $Y_{t}$を含む入力条件によって決まる$Y_{t+1} = f(Y_{t},A,B,C...)$で表すことのできる回路である.
+  \subsubsection{Dラッチ回路}
+  % Dラッチ回路
+    \begin{enumerate}
+      \item 基本動作
+      \item 考察
+    \end{enumerate}
+  \subsubsection{フリップフロップ回路}
+  % フリップフロップ回路
+    \begin{enumerate}
+      \item J-Kフリップフロップ回路(74HC112)
+        \begin{enumerate}
+          \item 基本動作
+          \item 実験
+          \item 考察    
+        \end{enumerate}
+      \item Dフリップフロップ回路(74HC74)を用いた$1/2$分周器
+        \begin{enumerate}
+          \item 基本動作
+          \item 実験
+          \item 考察
+        \end{enumerate}
+    \end{enumerate}
+\subsection{カウンタ回路}
 % 非同期16進カウンタ回路
-  \subsubsection{非同期16進カウンタ回路の機能}
-  \subsubsection{考察}
+  \subsubsection{非同期16進カウンタ回路}
+  \begin{enumerate}
+    \item 基本動作
+    \item 実験
+    \item 考察
+  \end{enumerate}
 \section{感想}
 % 感想
 
