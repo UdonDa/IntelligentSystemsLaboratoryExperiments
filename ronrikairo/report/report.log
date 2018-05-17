@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.14159265-p3.7.1-161114-2.6 (utf8.euc) (TeX Live 2017) (preloaded format=platex 2018.4.23)  17 MAY 2018 02:14
+This is e-pTeX, Version 3.14159265-p3.7.1-161114-2.6 (utf8.euc) (TeX Live 2017) (preloaded format=platex 2018.4.23)  17 MAY 2018 15:25
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -176,56 +176,64 @@ LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
 LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
 (Font)              scaled to size 5.76599pt on input line 10.
 LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
-(Font)              scaled to size 11.53198pt on input line 11.
+(Font)              scaled to size 11.53198pt on input line 12.
 LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
-(Font)              scaled to size 11.53198pt on input line 11.
+(Font)              scaled to size 11.53198pt on input line 12.
 LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
-(Font)              scaled to size 9.60999pt on input line 22.
+(Font)              scaled to size 9.60999pt on input line 24.
 LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
-(Font)              scaled to size 9.60999pt on input line 22.
+(Font)              scaled to size 9.60999pt on input line 24.
 File: ../img/ex_or/ex-or_kairo.png Graphic file (type bmp)
 <../img/ex_or/ex-or_kairo.png>
 LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
-(Font)              scaled to size 8.64899pt on input line 34.
+(Font)              scaled to size 8.64899pt on input line 36.
 LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
-(Font)              scaled to size 8.64899pt on input line 34.
+(Font)              scaled to size 8.64899pt on input line 36.
 
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 38.
+               Default added (so using `tbp') on input line 40.
 
 LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
-(Font)              scaled to size 6.72699pt on input line 42.
-LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
-(Font)              scaled to size 4.805pt on input line 42.
+(Font)              scaled to size 4.805pt on input line 45.
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 53.
+               Default added (so using `tbp') on input line 56.
+
+LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
+(Font)              scaled to size 6.72699pt on input line 72.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
 File: ../img/ex_or/nand_ex_or_kairo.png Graphic file (type bmp)
+
 <../img/ex_or/nand_ex_or_kairo.png> [1
 
 
 ]
 File: ../img/decoda/input2_decoda.png Graphic file (type bmp)
  <../img/decoda/input2_decoda.png>
-Underfull \vbox (badness 1297) has occurred while \output is active []
-
 File: ../img/half_adder/encoder.png Graphic file (type bmp)
 
 <../img/half_adder/encoder.png>
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 181.
+               Default added (so using `tbp') on input line 198.
 
 File: ../img/half_adder/half_ader_kairo.png Graphic file (type bmp)
-<../img/half_adder/half_ader_kairo.png> [2]
-Overfull \hbox (43.53767pt too wide) in alignment at lines 258--262
+<../img/half_adder/half_ader_kairo.png>
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [2]
+Underfull \vbox (badness 1776) has occurred while \output is active []
+
+
+Overfull \hbox (43.53767pt too wide) in alignment at lines 278--282
  [][][] []
  []
 
 
-Overfull \hbox (66.1727pt too wide) in alignment at lines 263--267
+Overfull \hbox (66.1727pt too wide) in alignment at lines 283--287
  [][][] []
  []
 
@@ -234,7 +242,7 @@ File: ../img/half_adder/fullAdder.png Graphic file (type bmp)
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [3]
-Overfull \hbox (15.5089pt too wide) in paragraph at lines 284--305
+Overfull \hbox (15.5089pt too wide) in paragraph at lines 304--325
  [][][][] 
  []
 
@@ -253,29 +261,48 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 File: ../img/junjokairo/jk_flip_flop.png Graphic file (type bmp)
 
 <../img/junjokairo/jk_flip_flop.png>
-Overfull \hbox (50.71928pt too wide) in paragraph at lines 392--405
+Overfull \hbox (33.40172pt too wide) in paragraph at lines 413--426
  [][][][] 
  []
 
 File: ../img/junjokairo/jk_flip_flop_time_chart.png Graphic file (type bmp)
 <../img/junjokairo/jk_flip_flop_time_chart.png> [5]
-Overfull \hbox (7.13123pt too wide) in paragraph at lines 440--450
+Overfull \hbox (7.13123pt too wide) in paragraph at lines 461--471
  [][][][] 
  []
 
 File: ../img/junjokairo/d_ff.png Graphic file (type bmp)
-<../img/junjokairo/d_ff.png> [6] (./report.aux)
+<../img/junjokairo/d_ff.png>
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 480.
+
+File: ../img/junjokairo/d-ff_time_chart.png Graphic file (type bmp)
+<../img/junjokairo/d-ff_time_chart.png>
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+File: ../img/junjokairo/hidouki_16sin_kairozu.png Graphic file (type bmp)
+
+<../img/junjokairo/hidouki_16sin_kairozu.png>
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [6]
+File: ../img/junjokairo/hidouki_16shin_dousahyou.png Graphic file (type bmp)
+
+<../img/junjokairo/hidouki_16shin_dousahyou.png> [7] [8
+
+] (./report.aux)
 
 LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
  ) 
 Here is how much of TeX's memory you used:
- 1633 strings out of 493653
- 20305 string characters out of 6148874
- 97736 words of memory out of 5000000
- 5213 multiletter control sequences out of 15000+600000
+ 1642 strings out of 493653
+ 20683 string characters out of 6148874
+ 99736 words of memory out of 5000000
+ 5219 multiletter control sequences out of 15000+600000
  15666 words of font info for 69 fonts, out of 8000000 for 9000
  934 hyphenation exceptions out of 8191
- 27i,11n,21p,294b,453s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 27i,11n,21p,294b,463s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on report.dvi (6 pages, 30288 bytes).
+Output written on report.dvi (8 pages, 41020 bytes).
