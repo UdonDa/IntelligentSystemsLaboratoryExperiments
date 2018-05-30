@@ -1,0 +1,155 @@
+\documentclass[10pt,a4j]{jsarticle}
+\usepackage{amsmath}
+\usepackage[dvipdfmx]{graphicx}
+\usepackage{url}
+\usepackage{here}
+% プリアンブル
+
+\makeatletter
+\newcommand{\subsubsubsection}{\@startsection{paragraph}{4}{\z@}%
+  {1.0\Cvs \@plus.5\Cdp \@minus.2\Cdp}%
+  {.1\Cvs \@plus.3\Cdp}%
+  {\reset@font\sffamily\normalsize}
+}
+\makeatother
+\setcounter{secnumdepth}{4}
+\title{\vspace{-2.5cm}金属材料の組織観察と引張試験}
+\author{1610581 堀田 大地}
+\date{2018/5/31}
+\begin{document}
+\maketitle{}
+\section{目的}
+% 目的
+焼きなまし焼き入れ，焼き入れ焼き戻しの熱処理を施した各種炭素鋼の金属組織を光学顕微鏡で観察し，
+熱処理による組織の変化を学ぶ.
+また，炭素鋼とアルミニウム合金を用いて引張試験を行い，
+応力ーひずみ線図を作成して引張試験から得られる機械的特性について学ぶ.
+% 実験
+\section{金属材料の組織観察}
+% 金属材料の組織観察
+  \subsection{目的}
+  % 目的
+  機械材料の性質判定の手段として、古くから光学顕微鏡による組織観察が用いられてきたが、禁煙は走査型電子顕微鏡、透過型電子顕微鏡による組織観察が用いられており、組織と金属材料の特性との研究がされている。
+  そこで、炭素鋼を資料として用いて、焼なまし、焼入れ、焼入れ焼もどしの熱処理を施した試料表面の組織を観察し、
+  組織の種類、配置分布、形状、大きさとこれらの相互関係を調べると共に、熱処理による組織の変化について学ぶことを
+  目的とする。
+  \subsection{Fe-Cの平衡状態図と熱処理}
+  熱処理には焼なまし、焼ならし、焼入れ、焼もどしがある。
+  焼なましとは、鋼を均一オーステナイト状態まで加熱・保持した後、炉内でゆっくり冷却する熱処理であり、この時得られる
+  組織を標準組織と言う。標準組織の鉄鋼は次式で与えられる引張り強さ$σ_{B}$で示すことが知られている。
+    \begin{center}
+	  $σ_{B} =281 \times (1-\frac{C\%}{0.8})+830 \times (\frac{C\%}{0.8})  (MPa)
+      $\quad(1)
+  \end{center}
+  焼ならしは、焼なまし処理と同様に鉄鋼を均一オーステナイト状態まで加熱・保持した後、
+  空気中で自然冷却する熱処理で、その結果得られる組織をソルバイトと呼び、強さと
+  靭性の優れた鉄鋼材が得られる。
+  しかし、焼ならしでは機械構造用部品等に要求される強さと靭性は十分得られな場合があり、この場合に焼入れと焼もどしを行う。
+  焼入れは、鉄鋼を均一オーステナイト状態まで加熱・保持した後、水中または油中に炭素鋼を入れて急冷する熱処理であり、
+  オーステナイトが無拡散変態によりマルテンサイトに変態する
+  焼もどしは、焼入れの後に再加熱し、冷却する熱処理で、鉄鋼はソルバイトまたはトルースタイトの組織になる。
+  
+  \subsection{試料作成と検鏡法}
+  	% 試料作成と検鏡法
+    \subsubsection{試料}
+    % 試料
+    表1に今回用いた試料を示した
+    \begin{table}[H]
+      \centering
+      \caption{組織観察用の資料の種類}
+        \label{my-label}
+        \footnotesize
+        \begin{tabular}{l|lll}
+                    & No. & 熱処理     &                    \\ \hline
+          極軟鋼        & 22  & 焼なまし    & 焼きなまし              \\
+          S15C       & 23  & 焼なまし    & 極軟鋼:950℃30分加熱→炉冷   \\
+          S45C       & 24  & 焼なまし    & S15C:900℃30分加熱→炉冷  \\
+                    & 25  & 焼入れ     & S45C:850℃60分加熱→炉冷  \\
+                    & 26  & 焼入れ焼もどし & SK105:850℃60分加熱→炉冷 \\
+          S85(SK5)   & 27  & 焼なまし    & SK85:950℃60分加熱→炉冷  \\
+                    & 28  & 焼入れ     & 焼入れ                \\
+                    & 29  & 焼入れ焼もどし & 850℃30分加熱→水焼入れ     \\
+          SK105(SK3) & 30  & 焼なまし    & 焼もどし               \\
+                    & 31  & 焼入れ     & 焼入れ後、600℃30分加熱→空冷  \\
+                    & 32  & 焼入れ焼もどし &                   
+        \end{tabular}
+      \end{table}
+    \subsubsection{研磨}
+    % 研磨
+    顕微鏡資料の作成は以下の手順で行った。
+    \begin{enumerate}
+      \item 試料の選定 \\
+      \item エメリー紙研磨\#1000で一方向のみへの研磨。次に\#1500で試料を$\frac{\pi}{2}$回転させて
+      研磨。 \\
+      \item さらに試料を$\frac{\pi}{2}$回転させ酸化クロム(I\hspace{-.1em}I\hspace{-.1em}I)
+      で仕上げ研磨(バフ研磨) \\
+    \end{enumerate}
+    \subsubsection{エッチング}
+    % エッチング
+    光学顕微鏡で、主に試料面の凹凸の差により起こる反射光の明暗の差によって組織を調べるため、適当な
+    腐蝕液で腐蝕する必要があるので、表2に示す腐蝕液で腐蝕を行なった。 
+    試料表面を腐蝕液に浸し、適切な腐蝕時間経過後、直ちに試料表面を流水で洗い流し
+    乾燥させた。$\sim$
+    \begin{table}[H]
+      \centering
+      \caption{エッチング}
+      \label{my-label}
+      \footnotesize
+      \begin{tabular}{llllll}
+        金属名 & No.        & エッチング液(腐蝕液)        & 化学成分     & 時間 & 適用          \\ \hline
+        鉄鋼  & 22$\sim$30 & 硝酸アルコール(Nital)     & 硝酸1      & 数秒$\sim$60秒 & 炭素鋼のすべての組織、 \\
+            & 31,32      & ピクリン酸アルコール(Picral) & ピクリン酸4cc & 数秒$\sim$60秒 & a          
+      \end{tabular}
+    \end{table}
+    \subsubsection{検鏡}
+    % 検鏡
+  
+  
+\section{金属材料の引張試験}
+  \subsection{目的}
+  機械、構造物の設計に必要な金属材料の性的な機械的特性を取得するためには、金属材料の引張試験を行う必要がある。
+  この試験により、金属材料の弾性と塑性の特性、引張強さ、破断伸び、破断絞りなどの基本的な機械的特性を測定
+  することができるので、炭素鋼とアルミニウム合金を供試材として、引張試験を行い、機械的特性を測定し、
+  引張試験方法を習得すると共に、炭素鋼とアルミニウム合金の機械特性の違いについて学ぶことを目的とする。
+  \subsubsection{引張試験}
+  \subsubsection{試験装置}
+  \subsubsection{供試材}
+  \subsubsection{縦弾性係数（ヤング率）の測定}
+  \subsubsection{引張試験手順}
+\section{結果}
+  \subsection{金属材料の組織観察}
+  \subsection{金属材料の引張試験}
+\section{結果}
+  \subsection{極軟鋼}
+    \subsubsection{a}
+    \subsubsection{b}
+    \subsubsection{c}
+  \subsection{S15C}
+      \subsubsection{a}
+    \subsubsection{b}
+    \subsubsection{c}
+  \subsection{S45C}
+      \subsubsection{a}
+    \subsubsection{b}
+    \subsubsection{c}
+  \subsection{SK85(SK6)}
+      \subsubsection{a}
+    \subsubsection{b}
+    \subsubsection{c}
+  \subsection{SK105(SK3)}
+    \subsubsection{a}
+    \subsubsection{b}
+    \subsubsection{c}
+  \subsection{SPCCの引張試験の結果}
+    \subsubsection{a}
+    \subsubsection{b}
+    \subsubsection{c}
+  \subsection{A1100の引張試験の結果}
+    \subsubsection{a}
+    \subsubsection{b}
+    \subsubsection{c}
+% 結果
+\begin{thebibliography}{3}
+\bibitem{}電気通信大学　共通教育部自然科学部会(物理) :基礎科学実験A p73-79
+\end{thebibliography}
+\end{document}

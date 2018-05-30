@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.14159265-p3.7.1-161114-2.6 (utf8.euc) (TeX Live 2017) (preloaded format=platex 2018.4.23)  16 MAY 2018 10:15
+This is e-pTeX, Version 3.14159265-p3.7.1-161114-2.6 (utf8.euc) (TeX Live 2017) (preloaded format=platex 2018.4.23)  30 MAY 2018 10:55
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -51,7 +51,7 @@ LaTeX Info: Redefining \LaTeXe on input line 200.
 \heisei=\count90
 )
 (/usr/local/texlive/2017/texmf-dist/tex/latex/amsmath/amsmath.sty
-Package: amsmath 2016/11/05 v2.16a AMS math features
+Package: amsmath 2017/09/02 v2.17a AMS math features
 \@mathmargin=\skip44
 
 For additional information on amsmath, use the `?' option.
@@ -190,10 +190,10 @@ LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 Here is how much of TeX's memory you used:
  1505 strings out of 493653
  17782 string characters out of 6148874
- 83835 words of memory out of 5000000
+ 83841 words of memory out of 5000000
  5119 multiletter control sequences out of 15000+600000
  14248 words of font info for 63 fonts, out of 8000000 for 9000
  934 hyphenation exceptions out of 8191
  27i,7n,21p,292b,250s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on report.dvi (1 page, 1596 bytes).
+Output written on report.dvi (1 page, 1608 bytes).
