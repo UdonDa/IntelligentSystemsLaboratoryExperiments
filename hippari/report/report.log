@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.14159265-p3.8.0-180226-2.6 (utf8.euc) (TeX Live 2018) (preloaded format=platex 2018.5.30)  30 MAY 2018 17:04
+This is e-pTeX, Version 3.14159265-p3.8.0-180226-2.6 (utf8.euc) (TeX Live 2018) (preloaded format=platex 2018.5.30)  30 MAY 2018 23:58
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -206,21 +206,126 @@ Overfull \hbox (61.42735pt too wide) in paragraph at lines 98--103
  []
 
 [2] [3]
-Overfull \vbox (119.63313pt too high) has occurred while \output is active []
+File: ../img/gokunankou_yakinamashi_200.png Graphic file (type bmp)
+<../img/gokunankou_yakinamashi_200.png>
+File: ../img/gokunankou_yakinamashi_100.png Graphic file (type bmp)
+<../img/gokunankou_yakinamashi_100.png>
 
+Overfull \hbox (2.2222pt too wide) in paragraph at lines 199--211
+[][]$[]$[] []$[]$[] 
+ []
 
-[4] (./report.aux)
+File: ../img/S15C_yakinamashi_500.png Graphic file (type bmp)
+<../img/S15C_yakinamashi_500.png>
+File: ../img/S15C_yakinamashi_1000.png Graphic file (type bmp)
+<../img/S15C_yakinamashi_1000.png>
+
+Overfull \hbox (2.2222pt too wide) in paragraph at lines 214--226
+[][]$[]$[] []$[]$[] 
+ []
+
+File: ../img/S45C_yakiire_1000.png Graphic file (type bmp)
+<../img/S45C_yakiire_1000.png>
+File: ../img/S45C_yakiire_500.png Graphic file (type bmp)
+<../img/S45C_yakiire_500.png>
+
+Overfull \hbox (2.2222pt too wide) in paragraph at lines 230--242
+[][]$[]$[] []$[]$[] 
+ []
+
+File: ../img/S45C_yakinamashi_1000.png Graphic file (type bmp)
+<../img/S45C_yakinamashi_1000.png>
+File: ../img/S45C_yakinamashi_500.png Graphic file (type bmp)
+<../img/S45C_yakinamashi_500.png>
+
+Overfull \hbox (2.2222pt too wide) in paragraph at lines 245--257
+[][]$[]$[] []$[]$[] 
+ []
+
+File: ../img/S45C_yakiiremodoshi_1000.png Graphic file (type bmp)
+<../img/S45C_yakiiremodoshi_1000.png>
+File: ../img/S45C_yakiiremodoshi_500.png Graphic file (type bmp)
+<../img/S45C_yakiiremodoshi_500.png>
+
+Overfull \hbox (2.2222pt too wide) in paragraph at lines 260--272
+[][]$[]$[] []$[]$[] 
+ []
+
+File: ../img/SK85_yakiire_1000.png Graphic file (type bmp)
+<../img/SK85_yakiire_1000.png>
+File: ../img/SK85_yakiire_500.png Graphic file (type bmp)
+<../img/SK85_yakiire_500.png>
+
+Overfull \hbox (2.2222pt too wide) in paragraph at lines 276--288
+[][]$[]$[] []$[]$[] 
+ []
+
+File: ../img/S85_yakinamashi_1000.png Graphic file (type bmp)
+<../img/S85_yakinamashi_1000.png>
+File: ../img/SK85_yakinamashi_500.png Graphic file (type bmp)
+<../img/SK85_yakinamashi_500.png>
+
+Overfull \hbox (2.2222pt too wide) in paragraph at lines 291--303
+[][]$[]$[] []$[]$[] 
+ []
+
+File: ../img/SK85_yakiiremodoshi_1000.png Graphic file (type bmp)
+<../img/SK85_yakiiremodoshi_1000.png>
+File: ../img/SK85_yakiiremodoshi_500.png Graphic file (type bmp)
+<../img/SK85_yakiiremodoshi_500.png>
+
+Overfull \hbox (2.2222pt too wide) in paragraph at lines 306--318
+[][]$[]$[] []$[]$[] 
+ []
+
+File: ../img/SK105_yakiire_1000.png Graphic file (type bmp)
+<../img/SK105_yakiire_1000.png>
+File: ../img/SK105_yakiire_500.png Graphic file (type bmp)
+<../img/SK105_yakiire_500.png>
+
+Overfull \hbox (2.2222pt too wide) in paragraph at lines 322--334
+[][]$[]$[] []$[]$[] 
+ []
+
+File: ../img/SK105_yakinamashi_1000.png Graphic file (type bmp)
+<../img/SK105_yakinamashi_1000.png>
+File: ../img/SK105_yakinamashi_500.png Graphic file (type bmp)
+<../img/SK105_yakinamashi_500.png>
+
+Overfull \hbox (2.2222pt too wide) in paragraph at lines 337--349
+[][]$[]$[] []$[]$[] 
+ []
+
+File: ../img/SK105_yakiiremodoshi_1000.png Graphic file (type bmp)
+<../img/SK105_yakiiremodoshi_1000.png>
+File: ../img/SK105_yakiiremodoshi_500.png Graphic file (type bmp)
+<../img/SK105_yakiiremodoshi_500.png>
+
+Overfull \hbox (2.2222pt too wide) in paragraph at lines 352--364
+[][]$[]$[] []$[]$[] 
+ []
+
+[4]
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 391.
+
+ (/usr/local/texlive/2018/texmf-dist/tex/latex/base/omscmr.fd
+File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <8> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 391.
+ [5] [6]
+[7] [8] [9] [10] (./report.aux)
 
 LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
  ) 
 Here is how much of TeX's memory you used:
- 1586 strings out of 493281
- 18990 string characters out of 6145041
- 93594 words of memory out of 5000000
- 5536 multiletter control sequences out of 15000+600000
+ 1676 strings out of 493281
+ 21635 string characters out of 6145041
+ 101594 words of memory out of 5000000
+ 5597 multiletter control sequences out of 15000+600000
  15995 words of font info for 72 fonts, out of 8000000 for 9000
  934 hyphenation exceptions out of 8191
- 27i,9n,21p,291b,299s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 27i,14n,21p,291b,397s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on report.dvi (4 pages, 9684 bytes).
+Output written on report.dvi (10 pages, 30236 bytes).
