@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.14159265-p3.8.0-180226-2.6 (utf8.euc) (TeX Live 2018) (preloaded format=platex 2018.5.30)  30 MAY 2018 23:58
+This is e-pTeX, Version 3.14159265-p3.8.0-180226-2.6 (utf8.euc) (TeX Live 2018) (preloaded format=platex 2018.5.30)  31 MAY 2018 15:52
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -145,6 +145,10 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \@float@everytoks=\toks22
 \@floatcapt=\box46
 )
+
+LaTeX Warning: Unused global option(s):
+    [10pt，a4j].
+
 No file report.aux.
 \openout1 = `report.aux'.
 
@@ -201,7 +205,7 @@ LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
 [1
 
 ]
-Overfull \hbox (61.42735pt too wide) in paragraph at lines 98--103
+Overfull \hbox (60.87604pt too wide) in paragraph at lines 98--103
  [][][][] 
  []
 
@@ -305,27 +309,44 @@ Overfull \hbox (2.2222pt too wide) in paragraph at lines 352--364
 [][]$[]$[] []$[]$[] 
  []
 
-[4]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 391.
+[4] [5] [6] [7]
+File: ../img/spcc_.png Graphic file (type bmp)
+<../img/spcc_.png>
+File: ../img/a1100_.png Graphic file (type bmp)
+<../img/a1100_.png>
 
- (/usr/local/texlive/2018/texmf-dist/tex/latex/base/omscmr.fd
-File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
-)
-LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <8> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 391.
- [5] [6]
-[7] [8] [9] [10] (./report.aux)
+Overfull \hbox (2.2222pt too wide) in paragraph at lines 432--445
+[][]$[]$[] []$[]$[] 
+ []
+
+File: ../img/spcc_yangu.png Graphic file (type bmp)
+<../img/spcc_yangu.png>
+File: ../img/a1100_yangu.png Graphic file (type bmp)
+<../img/a1100_yangu.png>
+
+Overfull \hbox (2.2222pt too wide) in paragraph at lines 454--467
+[][]$[]$[] []$[]$[] 
+ []
+
+File: ../img/zeroni.png Graphic file (type bmp)
+<../img/zeroni.png>
+
+Overfull \hbox (7.52647pt too wide) in paragraph at lines 481--485
+ [][][][] 
+ []
+
+[8] [9] [10] [11] [12] (./report.aux)
 
 LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
  ) 
 Here is how much of TeX's memory you used:
- 1676 strings out of 493281
- 21635 string characters out of 6145041
- 101594 words of memory out of 5000000
- 5597 multiletter control sequences out of 15000+600000
+ 1674 strings out of 493281
+ 21626 string characters out of 6145041
+ 101602 words of memory out of 5000000
+ 5593 multiletter control sequences out of 15000+600000
  15995 words of font info for 72 fonts, out of 8000000 for 9000
  934 hyphenation exceptions out of 8191
  27i,14n,21p,291b,397s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on report.dvi (10 pages, 30236 bytes).
+Output written on report.dvi (12 pages, 35316 bytes).
