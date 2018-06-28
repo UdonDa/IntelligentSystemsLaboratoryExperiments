@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.14159265-p3.8.0-180226-2.6 (utf8.euc) (TeX Live 2018) (preloaded format=platex 2018.5.30)  27 JUN 2018 16:35
+This is e-pTeX, Version 3.14159265-p3.8.0-180226-2.6 (utf8.euc) (TeX Live 2018) (preloaded format=platex 2018.5.30)  28 JUN 2018 12:11
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -184,18 +184,66 @@ LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
 [1
 
 
-] [2] (./report.aux)
+]
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 131.
+
+LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
+(Font)              scaled to size 8.64899pt on input line 133.
+LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
+(Font)              scaled to size 8.64899pt on input line 133.
+
+Overfull \hbox (11.42317pt too wide) in paragraph at lines 136--161
+ [][][][] 
+ []
+
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 163.
+
+
+Overfull \hbox (23.78133pt too wide) in paragraph at lines 168--216
+ [][][][] 
+ []
+
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 225.
+
+File: ../img/htheta.png Graphic file (type bmp)
+<../img/htheta.png>
+[2] [3]
+Underfull \hbox (badness 1178) in paragraph at lines 278--279
+[]\JY1/mc/m/n/10 株式会社キ ーエンス\OT1/cmr/m/n/10 , \JY1/mc/m/n/10 放射温度計
+の基礎
+ []
+
+
+Overfull \hbox (156.02951pt too wide) in paragraph at lines 278--279
+\OT1/cmr/m/n/10 https://www.keyence.co.jp/ss/products/recorder/lab/thermometry/
+radiation.jsp 
+ []
+
+
+Underfull \hbox (badness 2744) in paragraph at lines 279--280
+[]\JY1/mc/m/n/10 石川産業株式会社 \OT1/cmr/m/n/10 http://www.ishikawa-
+ []
+
+[4
+
+] (./report.aux)
 
 LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
  ) 
 Here is how much of TeX's memory you used:
- 1511 strings out of 493281
- 17898 string characters out of 6145041
- 92657 words of memory out of 5000000
- 5469 multiletter control sequences out of 15000+600000
- 14556 words of font info for 64 fonts, out of 8000000 for 9000
+ 1527 strings out of 493281
+ 18091 string characters out of 6145041
+ 108657 words of memory out of 5000000
+ 5477 multiletter control sequences out of 15000+600000
+ 15669 words of font info for 69 fonts, out of 8000000 for 9000
  934 hyphenation exceptions out of 8191
- 27i,12n,21p,296b,250s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 27i,12n,21p,296b,419s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on report.dvi (2 pages, 9840 bytes).
+Output written on report.dvi (4 pages, 18320 bytes).
