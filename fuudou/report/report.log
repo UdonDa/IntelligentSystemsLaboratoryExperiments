@@ -1,21 +1,21 @@
-This is e-pTeX, Version 3.14159265-p3.7.1-161114-2.6 (utf8.euc) (TeX Live 2017) (preloaded format=platex 2018.4.23)  30 MAY 2018 10:55
+This is e-pTeX, Version 3.14159265-p3.8.0-180226-2.6 (utf8.euc) (TeX Live 2018) (preloaded format=platex 2018.5.30)  12 JUL 2018 14:26
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**/Users/daichi/programing/class/zikken/meca-exp/template/report/report
-(/Users/daichi/programing/class/zikken/meca-exp/template/report/report.tex
-pLaTeX2e <2017/05/05> (based on LaTeX2e <2017-04-15>)
-Babel <3.10> and hyphenation patterns for 84 language(s) loaded.
-(/usr/local/texlive/2017/texmf-dist/tex/platex/jsclasses/jsarticle.cls
-Document Class: jsarticle 2017/03/05 okumura, texjporg
+**/Users/daichi/programing/class/zikken/meca-exp/fuudou/report/report
+(/Users/daichi/programing/class/zikken/meca-exp/fuudou/report/report.tex
+pLaTeX2e <2018-04-01>+1 (based on LaTeX2e <2018-04-01> patch level 2)
+Babel <3.18> and hyphenation patterns for 84 language(s) loaded.
+(/usr/local/texlive/2018/texmf-dist/tex/platex/jsclasses/jsarticle.cls
+Document Class: jsarticle 2018/03/11 jsclasses (okumura, texjporg)
 \jsc@mpt=\dimen118
 \jsc@mmm=\dimen119
 \jsc@smallskipamount=\skip41
-LaTeX Info: Redefining \rmfamily on input line 468.
-LaTeX Info: Redefining \sffamily on input line 471.
-LaTeX Info: Redefining \ttfamily on input line 474.
-LaTeX Info: Redefining \textmc on input line 477.
-LaTeX Info: Redefining \textgt on input line 479.
+LaTeX Info: Redefining \rmfamily on input line 466.
+LaTeX Info: Redefining \sffamily on input line 469.
+LaTeX Info: Redefining \ttfamily on input line 472.
+LaTeX Info: Redefining \textmc on input line 476.
+LaTeX Info: Redefining \textgt on input line 478.
 \symmincho=\mathgroup4
 LaTeX Font Info:    Overwriting symbol font `mincho' in version `bold'
 (Font)                  JY1/mc/m/n --> JY1/gt/m/n on input line 540.
@@ -25,58 +25,58 @@ LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
 (Font)              scaled to size 9.60999pt on input line 731.
 \fullwidth=\dimen120
 LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
-(Font)              scaled to size 7.68799pt on input line 883.
+(Font)              scaled to size 7.68799pt on input line 884.
 LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
-(Font)              scaled to size 7.68799pt on input line 883.
-\c@part=\count82
-\c@section=\count83
-\c@subsection=\count84
-\c@subsubsection=\count85
-\c@paragraph=\count86
-\c@subparagraph=\count87
+(Font)              scaled to size 7.68799pt on input line 884.
+\c@part=\count83
+\c@section=\count84
+\c@subsection=\count85
+\c@subsubsection=\count86
+\c@paragraph=\count87
+\c@subparagraph=\count88
 \@abstractbox=\box42
-\c@figure=\count88
-\c@table=\count89
+\c@figure=\count89
+\c@table=\count90
 \abovecaptionskip=\skip42
 \belowcaptionskip=\skip43
 \jsc@tocl@width=\dimen121
 \@lnumwidth=\dimen122
 \bibindent=\dimen123
-(/usr/local/texlive/2017/texmf-dist/tex/platex/jsclasses/jslogo.sty
+(/usr/local/texlive/2018/texmf-dist/tex/platex/jsclasses/jslogo.sty
 Package: jslogo 2017/02/24 okumura, texjporg
 LaTeX Info: Redefining \TeX on input line 94.
 LaTeX Info: Redefining \LaTeX on input line 147.
 LaTeX Info: Redefining \LaTeXe on input line 200.
 )
-\heisei=\count90
+\heisei=\count91
 )
-(/usr/local/texlive/2017/texmf-dist/tex/latex/amsmath/amsmath.sty
+(/usr/local/texlive/2018/texmf-dist/tex/latex/amsmath/amsmath.sty
 Package: amsmath 2017/09/02 v2.17a AMS math features
 \@mathmargin=\skip44
 
 For additional information on amsmath, use the `?' option.
-(/usr/local/texlive/2017/texmf-dist/tex/latex/amsmath/amstext.sty
+(/usr/local/texlive/2018/texmf-dist/tex/latex/amsmath/amstext.sty
 Package: amstext 2000/06/29 v2.01 AMS text
 
-(/usr/local/texlive/2017/texmf-dist/tex/latex/amsmath/amsgen.sty
+(/usr/local/texlive/2018/texmf-dist/tex/latex/amsmath/amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
 \@emptytoks=\toks15
 \ex@=\dimen124
 ))
-(/usr/local/texlive/2017/texmf-dist/tex/latex/amsmath/amsbsy.sty
+(/usr/local/texlive/2018/texmf-dist/tex/latex/amsmath/amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
 \pmbraise@=\dimen125
 )
-(/usr/local/texlive/2017/texmf-dist/tex/latex/amsmath/amsopn.sty
+(/usr/local/texlive/2018/texmf-dist/tex/latex/amsmath/amsopn.sty
 Package: amsopn 2016/03/08 v2.02 operator names
 )
-\inf@bad=\count91
+\inf@bad=\count92
 LaTeX Info: Redefining \frac on input line 213.
-\uproot@=\count92
-\leftroot@=\count93
+\uproot@=\count93
+\leftroot@=\count94
 LaTeX Info: Redefining \overline on input line 375.
-\classnum@=\count94
-\DOTSCASE@=\count95
+\classnum@=\count95
+\DOTSCASE@=\count96
 LaTeX Info: Redefining \ldots on input line 472.
 LaTeX Info: Redefining \dots on input line 475.
 LaTeX Info: Redefining \cdots on input line 596.
@@ -85,15 +85,15 @@ LaTeX Info: Redefining \cdots on input line 596.
 \big@size=\dimen126
 LaTeX Font Info:    Redeclaring font encoding OML on input line 712.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 713.
-\macc@depth=\count96
-\c@MaxMatrixCols=\count97
+\macc@depth=\count97
+\c@MaxMatrixCols=\count98
 \dotsspace@=\muskip10
-\c@parentequation=\count98
-\dspbrk@lvl=\count99
+\c@parentequation=\count99
+\dspbrk@lvl=\count100
 \tag@help=\toks16
-\row@=\count100
-\column@=\count101
-\maxfields@=\count102
+\row@=\count101
+\column@=\count102
+\maxfields@=\count103
 \andhelp@=\toks17
 \eqnshift@=\dimen127
 \alignsep@=\dimen128
@@ -108,79 +108,348 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 713.
 LaTeX Info: Redefining \[ on input line 2817.
 LaTeX Info: Redefining \] on input line 2818.
 )
-(/usr/local/texlive/2017/texmf-dist/tex/latex/graphics/graphicx.sty
-Package: graphicx 2014/10/28 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
+(/usr/local/texlive/2018/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2017/06/01 v1.1a Enhanced LaTeX Graphics (DPC,SPQR)
 
-(/usr/local/texlive/2017/texmf-dist/tex/latex/graphics/keyval.sty
+(/usr/local/texlive/2018/texmf-dist/tex/latex/graphics/keyval.sty
 Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
 \KV@toks@=\toks20
 )
-(/usr/local/texlive/2017/texmf-dist/tex/latex/graphics/graphics.sty
-Package: graphics 2017/04/14 v1.1b Standard LaTeX Graphics (DPC,SPQR)
+(/usr/local/texlive/2018/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2017/06/25 v1.2c Standard LaTeX Graphics (DPC,SPQR)
 
-(/usr/local/texlive/2017/texmf-dist/tex/latex/graphics/trig.sty
+(/usr/local/texlive/2018/texmf-dist/tex/latex/graphics/trig.sty
 Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
 )
-(/usr/local/texlive/2017/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+(/usr/local/texlive/2018/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
 Package graphics Info: Driver file: dvipdfmx.def on input line 99.
 
-(/usr/local/texlive/2017/texmf-dist/tex/latex/graphics-def/dvipdfmx.def
-File: dvipdfmx.def 2016/07/11 v4.12 LaTeX color/graphics driver for dvipdfmx (L
-3/ChoF)
+(/usr/local/texlive/2018/texmf-dist/tex/latex/graphics-def/dvipdfmx.def
+File: dvipdfmx.def 2017/06/24 v5.0g Graphics/color driver for dvipdfmx
 ))
 \Gin@req@height=\dimen133
 \Gin@req@width=\dimen134
 )
-(/usr/local/texlive/2017/texmf-dist/tex/latex/url/url.sty
+(/usr/local/texlive/2018/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip11
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
+(/usr/local/texlive/2018/texmf-dist/tex/latex/amsfonts/amssymb.sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+
+(/usr/local/texlive/2018/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\symAMSa=\mathgroup5
+\symAMSb=\mathgroup6
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+))
 No file report.aux.
 \openout1 = `report.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for JY1/mc/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for JT1/mc/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for JY1/mc/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for JT1/mc/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
 LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
-(Font)              scaled to size 16.60605pt on input line 10.
+(Font)              scaled to size 16.60605pt on input line 11.
 LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
-(Font)              scaled to size 16.60605pt on input line 10.
+(Font)              scaled to size 16.60605pt on input line 11.
 LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
-(Font)              scaled to size 11.53198pt on input line 10.
-LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
-(Font)              scaled to size 11.53198pt on input line 10.
-LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
-(Font)              scaled to size 5.76599pt on input line 10.
-LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
 (Font)              scaled to size 11.53198pt on input line 11.
-LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
+LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
 (Font)              scaled to size 11.53198pt on input line 11.
+LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
+(Font)              scaled to size 5.76599pt on input line 11.
+LaTeX Font Info:    Try loading font information for U+msa on input line 11.
+(/usr/local/texlive/2018/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 11.
+
+(/usr/local/texlive/2018/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
 LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
-(Font)              scaled to size 9.60999pt on input line 15.
+(Font)              scaled to size 11.53198pt on input line 12.
 LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
-(Font)              scaled to size 9.60999pt on input line 15.
+(Font)              scaled to size 11.53198pt on input line 12.
+LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
+(Font)              scaled to size 9.60999pt on input line 21.
+LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
+(Font)              scaled to size 9.60999pt on input line 21.
 LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
-(Font)              scaled to size 6.72699pt on input line 16.
+(Font)              scaled to size 6.72699pt on input line 24.
 LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
-(Font)              scaled to size 4.805pt on input line 16.
+(Font)              scaled to size 4.805pt on input line 24.
+
+Overfull \hbox (6.79005pt too wide) in alignment at lines 24--29
+ [][][] []
+ []
+
 [1
 
 
+]
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 128.
+
+LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
+(Font)              scaled to size 8.64899pt on input line 130.
+LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
+(Font)              scaled to size 8.64899pt on input line 130.
+
+Overfull \hbox (40.4884pt too wide) in paragraph at lines 133--137
+ [][][][] 
+ []
+
+[2]
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 179.
+
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 219.
+
+
+Underfull \vbox (badness 1173) has occurred while \output is active []
+
+
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 248.
+
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 302.
+
+File: ../img/graph1.png Graphic file (type bmp)
+<../img/graph1.png>
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 317.
+
+
+Overfull \hbox (8.84499pt too wide) in paragraph at lines 322--350
+ [][][][] 
+ []
+
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 353.
+
+
+Overfull \hbox (8.84499pt too wide) in paragraph at lines 358--386
+ [][][][] 
+ []
+
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 389.
+
+
+Overfull \hbox (8.84499pt too wide) in paragraph at lines 394--422
+ [][][][] 
+ []
+
+
+Underfull \vbox (badness 4556) has occurred while \output is active []
+
+ [3]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [4]
+File: ../img/kashika/001.jpg Graphic file (type bmp)
+<../img/kashika/001.jpg>
+
+Overfull \hbox (92.83026pt too wide) in paragraph at lines 449--450
+ [] 
+ []
+
+File: ../img/kashika/002.jpg Graphic file (type bmp)
+<../img/kashika/002.jpg>
+
+Overfull \hbox (92.83026pt too wide) in paragraph at lines 456--457
+ [] 
+ []
+
+File: ../img/kashika/003.jpg Graphic file (type bmp)
+<../img/kashika/003.jpg>
+
+Overfull \hbox (92.83026pt too wide) in paragraph at lines 463--464
+ [] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 447--467
+[][]$[]$[]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 447--467
+[]$[]$[]
+ []
+
+File: ../img/kashika/004.jpg Graphic file (type bmp)
+<../img/kashika/004.jpg>
+
+Overfull \hbox (92.83026pt too wide) in paragraph at lines 474--475
+ [] 
+ []
+
+File: ../img/kashika/005.jpg Graphic file (type bmp)
+<../img/kashika/005.jpg>
+
+Overfull \hbox (92.83026pt too wide) in paragraph at lines 481--482
+ [] 
+ []
+
+File: ../img/kashika/006.jpg Graphic file (type bmp)
+<../img/kashika/006.jpg>
+
+Overfull \hbox (92.83026pt too wide) in paragraph at lines 488--489
+ [] 
+ []
+
+File: ../img/kashika/007.jpg Graphic file (type bmp)
+<../img/kashika/007.jpg>
+
+Overfull \hbox (92.83026pt too wide) in paragraph at lines 495--496
+ [] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 472--499
+[][]$[]$[]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 472--499
+[]$[]$[]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 472--499
+[]$[]$[]
+ []
+
+File: ../img/kashika/008.jpg Graphic file (type bmp)
+<../img/kashika/008.jpg>
+
+Overfull \hbox (92.83026pt too wide) in paragraph at lines 506--507
+ [] 
+ []
+
+File: ../img/kashika/009.jpg Graphic file (type bmp)
+<../img/kashika/009.jpg>
+
+Overfull \hbox (92.83026pt too wide) in paragraph at lines 513--514
+ [] 
+ []
+
+File: ../img/kashika/010.jpg Graphic file (type bmp)
+<../img/kashika/010.jpg>
+
+Overfull \hbox (92.83026pt too wide) in paragraph at lines 520--521
+ [] 
+ []
+
+File: ../img/kashika/011.jpg Graphic file (type bmp)
+<../img/kashika/011.jpg>
+
+Overfull \hbox (92.83026pt too wide) in paragraph at lines 527--528
+ [] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 504--531
+[][]$[]$[]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 504--531
+[]$[]$[]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 504--531
+[]$[]$[]
+ []
+
+File: ../img/kashika/012.jpg Graphic file (type bmp)
+<../img/kashika/012.jpg>
+
+Overfull \hbox (92.83026pt too wide) in paragraph at lines 538--539
+ [] 
+ []
+
+File: ../img/kashika/013.jpg Graphic file (type bmp)
+<../img/kashika/013.jpg>
+
+Overfull \hbox (92.83026pt too wide) in paragraph at lines 545--546
+ [] 
+ []
+
+File: ../img/kashika/014.jpg Graphic file (type bmp)
+<../img/kashika/014.jpg>
+
+Overfull \hbox (92.83026pt too wide) in paragraph at lines 552--553
+ [] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 536--556
+[][]$[]$[]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 536--556
+[]$[]$[]
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [5]
+[6]
+Overfull \hbox (31.09866pt too wide) in alignment at lines 587--593
+ [][][] []
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [7]
+Underfull \hbox (badness 2486) in paragraph at lines 618--619
+[]\JY1/mc/m/n/10 池田 悠太 ， \OT1/cmr/m/n/10 33 \JY1/mc/m/n/10 スモ ークワイヤ
+ ー法に
+ []
+
+
+Underfull \hbox (badness 1924) in paragraph at lines 618--619
+\JY1/mc/m/n/10 よる流れの可視化 ， \OT1/cmr/m/n/10 http://www.nagaoka-
+ []
+
+[8
 
 ] (./report.aux)
 
@@ -188,12 +457,12 @@ LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
  ) 
 Here is how much of TeX's memory you used:
- 1505 strings out of 493653
- 17782 string characters out of 6148874
- 83841 words of memory out of 5000000
- 5119 multiletter control sequences out of 15000+600000
- 14248 words of font info for 63 fonts, out of 8000000 for 9000
+ 1864 strings out of 493281
+ 22292 string characters out of 6145041
+ 121129 words of memory out of 5000000
+ 5778 multiletter control sequences out of 15000+600000
+ 18554 words of font info for 83 fonts, out of 8000000 for 9000
  934 hyphenation exceptions out of 8191
- 27i,7n,21p,292b,250s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 27i,14n,27p,366b,391s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on report.dvi (1 page, 1608 bytes).
+Output written on report.dvi (8 pages, 35624 bytes).
