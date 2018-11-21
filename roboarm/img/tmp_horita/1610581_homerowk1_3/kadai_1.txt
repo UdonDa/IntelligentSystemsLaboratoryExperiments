@@ -1,0 +1,24 @@
+Homework 1
+- PD
+when gain is high, the result looks good.
+
+- PD with gravity support.
+As gain is higher, needless movement is less.(To see gragh)
+
+- lineared feedback.
+As gain is higher, needless movement is less.
+
+
+Homework 2
+- PD
+movement was symmetory. when gain is high, the movement is same, but sitamuki no fure
+notoki is mokuhyouyori sagatte ita.
+
+- PD with grabity support.
+As gain is higher. needless movement is less. the movement is same.
+
+- liniared feedback.
+this can peform well better than other ways.
+
+tau 2 is very safe.
+Homework 3

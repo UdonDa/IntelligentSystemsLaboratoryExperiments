@@ -1,0 +1,7 @@
+- Pointo-to-Point
+
+
+
+- Trajectory tracking
+when I selected pattern 2, sa-bo no kadou kuiki no soto kana? gaku tte natta.
+robot arm cant go outside of circle line.
