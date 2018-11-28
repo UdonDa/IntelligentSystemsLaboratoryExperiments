@@ -1,0 +1,404 @@
+% \documentclass[twocolumn, 10pt,a4j]{jsarticle}
+\documentclass[10pt,a4j]{jsarticle}
+\usepackage{amsmath}
+\usepackage[dvipdfmx]{graphicx}
+\usepackage{url}
+\usepackage{listings,jlisting} %日本語のコメントアウトをする場合jlistingが必
+\usepackage{here}
+\lstset{
+  basicstyle={\ttfamily},
+  identifierstyle={\small},
+  commentstyle={\smallitshape},
+  keywordstyle={\small\bfseries},
+  ndkeywordstyle={\small},
+  stringstyle={\small\ttfamily},
+  frame={tb},
+  breaklines=true,
+  columns=[l]{fullflexible},
+  numbers=left,
+  xrightmargin=0zw,
+  xleftmargin=3zw,
+  numberstyle={\scriptsize},
+  stepnumber=1,
+  numbersep=1zw,
+  lineskip=-0.5ex
+}
+
+
+
+% プリアンブル
+\vspace{100mm}
+\title{\vspace{-2.5cm}ROSを用いた移動ロボットの知覚制御}
+\author{1610581 堀田 大地}
+\date{2018/11/29}
+\begin{document}
+\maketitle{}
+\thispagestyle{empty}
+\clearpage
+
+
+\section{目的}
+  % 目的
+  本実験では，複数のセンサを統合したロボットシステム開発を行う. 加えて，ミドルウェア，ROS，を用いることでロボットシステム
+  開発が容易に行えることを体験する.
+
+\section{課題 1}
+% 課題1
+本章では，人の声を認識してロボットがそれに対する受け答えをするようなプログラムを作成した.
+それを実現するために，Publishとして音声を流して，それをSubscribeして，テキストデータに変換してプログラムが応答する実験を
+行った. また，Roscoreはlocalhostで立ち上げた. ソースコードはAppendix-Aに記載した. しかしながら，音声を認識
+できるのは我々が定義した辞書ファイルに書かれている日本語のみであった.
+
+  \subsection{手法}
+  まずは，RosClientインスタンスのGetLastMsgメソッドを用いて，SpeechInfoをSubscribeした. その情報の中に
+  我々が喋った言葉が含まれていた. 次に，そのデータを文字列へ変換し，我々が定義した言葉に一致するならば，ある言葉を
+  喋らすようなプログラムを作成した.
+
+  \subsection{実験}
+  % 結果
+  辞書に定義されている日本語はしっかり認識されていた. しかしながら，それ以外の言葉はランダムで1つ喋っているよう
+  であった. この問題を解決するために，色々な対話を試すときは辞書ファイルを更新してRoscoreから起動し直した.
+  認識率は高く，ROSを用いることで簡単にメッセージを流すことができた.
+
+\section{課題 2}
+% 課題2
+本章では，ロボットが見ているシーンを音声で説明できるようにした. 例えば，人が手を挙げているのを
+認識すると`人が手を挙げている`と状況を説明することである. 
+  
+  \subsection{手法}
+  % 手法
+  課題1と同様に，Skeltons情報をSubscribeして，条件にて場合分けを行って，どのポーズを取っているかを評価した.
+  また，課題 1で使用したソースコードのSubscribeした言葉に対して応答する部分を利用し，音声発話を行った.
+  具体的には，右手を挙げていると`われわれのしょうりだ`と発話するようなプログラムを作成した.
+
+  \subsection{実験}
+  % 実験
+  右手をあげるとしっかり発話するプログラムを作成できた. Skeltion情報の場合分けの部分では，頭の位置より手の高さが高いならば
+  手を挙げたとしていたが，実際には頭の高さより大きく手を挙げなければ挙げたと判定されなかった. ROSで容易にSpeech情報だけでなく
+  Skelton情報を簡単に特別なプログラムを書くことなく扱えることが確認できた.
+
+\section{課題 3}
+  本章では，音声を用いてロボットを制御できるようにした. 例えば，`まえにすすんで`と発話すれば，実際にロボットが
+  前進するようなプログラムを作成した.
+
+  \subsection{手法}
+  % 手法
+  まず，課題1と同様にして音声情報を文字列データに変換した. そして，受け取りたい言葉を辞書ファイルに定義し，
+  if文を使って言葉によって次のロボットの動きが変わるようにした. ソースコードをAppendix-3に記載した.
+
+  \subsection{実験}
+  % 実験
+  課題1で辞書に定義している文字列は認識できると評価できていたので，問題なく認識できた. しかしながら，実際はロボットの
+  動作のときに想定の綺麗な動きをすることは稀であった. これは，実際のロボットの動作だとノイズや抵抗があり，制御に対して
+  誤差が生じていたからであると考えられた.
+
+\section{課題 4}
+  本章では，独自の複雑な動きをロボットに実行させた. 例えば，ジグザクにロボットを動かすことを意味する.
+
+  \subsection{手法}
+  直進，60度回転の動作を繰り返して正三角形の軌跡を辿るようなプログラムを実装した.
+  ソースコードをAppendix-4に記載した.
+
+  \subsection{実験}
+  実験3と同様にノイズや抵抗のせいで綺麗な正三角形を描くような軌跡を描くことはできなかったが，定量的な評価ではあるが，
+  三角形は描けていた. しかしながら，このような一連の動作を記載するようなプログラムが本当に良いのかは評価しなければならない.
+  なぜならば，ロボットの状態をPublish，SubscribeするのがROSの良い部分なのに，ロボットが動いているかどうかだけで
+  次の動作を実行しているソースコードとなっているからだ.
+
+\section{様々なロボット}
+  \subsection{対話ロボット}
+  % 対話ロボット
+  今回のような辞書データに含まれる言葉のみを認識するようなプログラムでは限界がある.
+  それに加えて，全ての言葉を辞書にするという発送もあるかもしれないが，計算量的に現実的でない.
+  近年では，SpeechRecognitionも発展している[1]ので事前に深層学習を用いて音声認識モデルを学習することも有用
+  であると思う. また，面白い対話をする取り組みとして真下らの研究がある[2]. これはテーマを与えれば自動的にネタを作る
+  漫才ロボットを提案している. 具体的には漫才データベースを保持しており，一番テーマに近いボケをセレクトするというものである.
+  この研究では，データベースなので有限な面白さしかないのが問題である. この問題を解決するために，インターネットのボケてというサービスから
+  テーマとボケを学習して，画像からのキャプション生成をしている吉田らの研究[3]がある. これはボケてからデータを収集し，いいね数を考慮した
+  データベースを作成して，画像とボケの関係性を学習しており，いいね数はそのボケの面白さを表す指標として用いるためにobjectivesの係数としている.
+  [3]の実験結果によれば，アンケートで実際の投稿されているボケ，生成したボケ，MS COCOデータセットを用いて学習したモデルでキャプション生成
+  (STAIR caption)を行った結果を評価してもらい，68\%の人が前者，23\%の人が提案手法，9\%の人がSTAIR captionが面白いと
+  回答している. 私は，面白さとは意外性から来るものだと思っており，既存の手法では人間の意外性までは表現することができていないと評価している.
+
+  \subsection{質問応答ロボット}
+  このロボットも同様にして，まずは発言を理解することが大事である. しかしながら，現在の技術であればこの問題は問題とはならないと思う.
+  近年，自然言語処理の分野においては，Vaswaniらの研究[4]を初めとして，Attentionを用いることで重要性の高い部分に注意するという手法がよく使われている.
+  また，コンピュータビジョンの分野においても画像とその画像に関する質問が与えられたきに，その正しい答えを導くタスクであるVQAが盛んである.
+  このような取り組みから質問の本質を探る研究がなされている. しかしながら，人間は質問や説明を行うときに普遍的な知識を用いることが多い.
+  このようなトレーニングプロセスの中では，そのような普遍的な知識を獲得することはできない. そのため，本質とはずれている回答が得られるケース
+  がある. そのため，ある画像やテキストドメインに対しても不変である回答や提案が不可欠であると考えている.
+
+  \subsection{サッカーロボット}
+  近年のサッカーロボットでは，特にロボカップのサッカーリーグにおいてはチームプレイを行うという手段が取られていると思う. これは強化学習を行い
+  ロボット間の連携を学習して，効率よくパスを用いるため点数を獲得しやすいためだと考える. サッカーを用いてロボット間の強調タスクの精度
+  をあげることで，実際にロボット運用のときのコミュニケーション改善に繋がると考えている. また，サッカーをするためには，このような
+  プレイ面の他にも，ロボットの正確な制御や異常状態にならないことが求められる.
+
+
+
+
+
+
+
+
+\section{Appendix}
+\subsection{課題1のソースコード}
+
+\begin{lstlisting}[caption=AudioTest.py, label=p4_txt]
+# coding: shift-jis
+import os
+os.system("title AudioTest.py")
+from RosClientBin import *
+
+client = RosClient()
+client.Connect( "localhost" , "11311" )
+client.Subscribe[SpeechInfo]()
+client.Publish[SpeechOrder]()
+
+while True:
+    info = client.GetLastMsg[SpeechInfo]()
+
+    if info:
+        print ToString(info.recSpeech), info.isSpeaking
+        if ToString(info.recSpeech).find("こんにちわ")!=-1:
+            order = SpeechOrder()
+            order.utterace = ToBytes("かえりたい")
+            client.Send( order )
+        elif ToString(info.recSpeech).find("かえりたい")!=-1:
+            order = SpeechOrder()
+            order.utterace = ToBytes("おれも")
+            client.Send(order)
+        elif ToString(info.recSpeech).find("まえにすすんで")!=-1:
+            order = SpeechOrder()
+            order.utterace = ToBytes("まえにすすみます")
+            client.Send(order)
+\end{lstlisting}
+
+
+\subsection{課題2のソースコード}
+% 課題2
+\begin{lstlisting}[caption=VisionTest.py, label=p4_txt]
+  # coding: shift-jis
+  import os
+  os.system("title VisionTest.py")
+  from RosClientBin import *
+  import time
+  
+  client = RosClient()
+  client.Connect( "localhost" , "11311" )
+  client.Subscribe[Skeltons]()
+  client.Subscribe[Objects]()
+  client.Subscribe[Faces]()
+  client.Subscribe[ColorBlobs]()
+  client.Subscribe[SpeechInfo]()
+  
+  while True:
+      time.sleep(5)
+      skeltons = client.GetLastMsg[Skeltons]()
+      if skeltons:
+          if skeltons.data.Count:
+              rightUp = False
+              leftUp = False
+              rightFront = False
+              leftFront = False
+              rightSide = False
+              leftSide = False
+  
+              if skeltons.data[0].joints[Skelton.SKEL_RIGHT_HAND].y - skeltons.data[0].joints[Skelton.SKEL_HEAD].y > 0: rightUp = True;
+              if skeltons.data[0].joints[Skelton.SKEL_LEFT_HAND].y - skeltons.data[0].joints[Skelton.SKEL_HEAD].y > 0: leftUp = True;
+  
+              if skeltons.data[0].joints[Skelton.SKEL_HEAD].z - skeltons.data[0].joints[Skelton.SKEL_RIGHT_HAND].z > 300: rightFront = True;
+              if skeltons.data[0].joints[Skelton.SKEL_HEAD].z - skeltons.data[0].joints[Skelton.SKEL_LEFT_HAND].z > 300: leftFront = True;
+  
+              if skeltons.data[0].joints[Skelton.SKEL_RIGHT_HAND].x - skeltons.data[0].joints[Skelton.SKEL_RIGHT_SHOULDER].x < -300: rightSide = True;
+              if skeltons.data[0].joints[Skelton.SKEL_LEFT_HAND].x - skeltons.data[0].joints[Skelton.SKEL_LEFT_SHOULDER].x > 300: leftSide = True;
+  
+              if rightUp:
+                  order = SpeechOrder()
+                  order.utterace = ToBytes("われわれのしょうりだ")
+                  client.Send( order )
+  
+              if rightFront:    print "前",
+              if rightSide:     print "横",
+              print
+  
+              if leftUp:      print "上",
+              if leftFront:   print "前",
+              if leftSide:    print "横",
+              print
+  
+      objects = client.GetLastMsg[Objects]()
+      if objects:
+          for i in range( objects.data.Count ):
+              print "物体検出 id:", objects.data[i].id, " pos:",objects.data[i].pos.x, objects.data[i].pos.y,objects.data[i].pos.z
+  
+      faces = client.GetLastMsg[Faces]()
+      if faces:
+          for i in range( faces.data.Count ):
+              print "顔検出 id:", faces.data[i].id, " pos:",faces.data[i].pos.x, faces.data[i].pos.y,faces.data[i].pos.z
+  
+      color = client.GetLastMsg[ColorBlobs]()
+      if color:
+          for i in range( color.data.Count ):
+              print "色検出 id:" , color.data[i].id, " pos:",color.data[i].pos.x, color.data[i].pos.y, color.data[i].pos.z
+  
+\end{lstlisting}
+  
+
+\subsection{課題3のソースコード}
+  % 課題2
+  \begin{lstlisting}[caption=RobotTest.py, label=p4_txt]
+# coding: shift-jis
+import os
+os.system("title RobotTest.py")
+from RosClientBin import *
+from msvcrt import *
+
+client = RosClient()
+client.Connect( "localhost" , "11311" )
+client.Subscribe[RobotInfo]()
+client.Subscribe[SpeechInfo]()
+client.Publish[RobotOrder]()
+client.Publish[SpeechOrder]()
+import sys
+import time
+info_speech = None
+while 1:
+    c = 0
+
+    order = RobotOrder()
+    info_speech = client.GetLastMsg[SpeechInfo]()
+    info = client.GetLastMsg[RobotInfo]()
+    order_speech = SpeechOrder()
+
+    if info_speech:
+        print("info speech is True")
+        if ToString(info_speech.recSpeech).find("まえ")!=-1:
+            order.kind = RobotOrder.ORDER_MOVE_FORWARD;
+            order.data.Add( 0.1 );
+        elif ToString(info_speech.recSpeech).find("うしろ")!=-1:
+            order.kind = RobotOrder.ORDER_MOVE_FORWARD
+            order.data.Add( -0.1 );
+        elif ToString(info_speech.recSpeech).find("ひだり")!=-1:
+            order.kind = RobotOrder.ORDER_ROTATE;
+            order.data.Add( 0.5 );
+        elif ToString(info_speech.recSpeech).find("みぎ")!=-1:
+            order.kind = RobotOrder.ORDER_ROTATE;
+            order.data.Add( -0.5 );
+        elif ToString(info_speech.recSpeech).find("とまれ")!=-1:
+            if info.ismoving:
+                order.kind = RobotOrder.ORDER_STOP;
+
+        client.Send(order)
+\end{lstlisting}
+
+\subsection{課題4のソースコード}
+
+\begin{lstlisting}[caption=RobotTestDistAngle.py, label=p4_txt]
+
+  # coding: shift-jis
+import sys
+import os
+os.system("title RobotTestDistAngle.py")
+from RosClientBin import *
+import time
+import System
+import msvcrt
+
+
+
+client = RosClient()
+client.Connect( "127.0.0.1" , "11311" )
+client.Publish[RobotOrder]()
+client.Subscribe[RobotInfo]()
+
+##################
+order = RobotOrder()
+order.kind = RobotOrder.ORDER_MOVE_DIST
+order.data.Add(0.5)
+client.Send(order)
+
+while True:
+    time.sleep(2)
+    info = client.GetLastMsg[RobotInfo]()
+    if info:
+        if info.ismoving==False:
+            break
+
+##################
+order = RobotOrder()
+order.kind = RobotOrder.ORDER_ROTATE_ANGLE
+order.data.Add(3.14 * 2 / 3)
+client.Send(order)
+
+while True:
+    time.sleep(2)
+    info = client.GetLastMsg[RobotInfo]()
+    if info:
+        if info.ismoving==False:
+            break
+
+##################
+order = RobotOrder()
+order.kind = RobotOrder.ORDER_MOVE_DIST
+order.data.Add(0.5)
+client.Send(order)
+
+while True:
+    time.sleep(2)
+    info = client.GetLastMsg[RobotInfo]()
+    if info:
+        if info.ismoving==False:
+            break
+
+##################
+order = RobotOrder()
+order.kind = RobotOrder.ORDER_ROTATE_ANGLE
+order.data.Add(3.14 * 2 / 3)
+client.Send(order)
+
+while True:
+    time.sleep(2)
+    info = client.GetLastMsg[RobotInfo]()
+    if info:
+        if info.ismoving==False:
+            break
+        else:
+
+##################
+order = RobotOrder()
+order.kind = RobotOrder.ORDER_MOVE_DIST
+order.data.Add(0.5)
+client.Send(order)
+
+while True:
+    time.sleep(2)
+    info = client.GetLastMsg[RobotInfo]()
+    if info:
+        if info.ismoving==False:
+            break
+        else:
+
+##################
+order = RobotOrder()
+order.kind = RobotOrder.ORDER_ROTATE_ANGLE
+order.data.Add(3.14 * 2 / 3)
+client.Send(order)
+
+while True:
+    time.sleep(2)
+    info = client.GetLastMsg[RobotInfo]()
+    if info:
+        if info.ismoving==False:
+            break
+\end{lstlisting}
+
+
+\begin{thebibliography}{3}
+
+\bibitem{}久保 陽太郎，音声認識のための深層学習(連載解説: Deep Learning(深層学習，第5回〕)Deep Learning for Speech Recognition(<Survey Papers>Deep Learning(5))，人工知能学会，2014.
+\bibitem{}R. Mashimo, T. Umetani, T. Kitamura and A. Nadamoto, Generating Funny Dialogue between Robots based on Japanese Traditional Comedy Entertainment, In Proc. of the Conference on Interactive Entertainment(IE), 2014.
+\bibitem{}K. Yoshida, M. Minoguchi, K. Wani, A. Nakamura and H. Kataoka, Neural Joking Machine : Humorous image captioning, In Proc. of the IEEE Conference on Computer Vision and Pattern Recognition of Language \& Vision Workshop(CVPR), 2018.
+\bibitem{}K. Wani.Shazeer, N. Parmar, J. Uszkoreit, L. Jones, A. N. Gomez, L. Kaiser and I. Polosukhin, Attention Is All You Need, arXiv 1706.03762, 2017.
+\end{thebibliography}
+\end{document}
