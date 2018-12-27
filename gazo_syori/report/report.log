@@ -1,9 +1,9 @@
-This is e-pTeX, Version 3.14159265-p3.8.0-180226-2.6 (utf8.euc) (TeX Live 2018) (preloaded format=platex 2018.5.30)  27 DEC 2018 22:48
+This is e-pTeX, Version 3.14159265-p3.8.0-180226-2.6 (utf8.euc) (TeX Live 2018) (preloaded format=platex 2018.5.30)  28 DEC 2018 00:21
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**/Users/daichi/programing/class/zikken/meca-exp/robo_seigyo/report/report
-(/Users/daichi/programing/class/zikken/meca-exp/robo_seigyo/report/report.tex
+**/Users/daichi/programing/class/zikken/meca-exp/gazo_syori/report/report
+(/Users/daichi/programing/class/zikken/meca-exp/gazo_syori/report/report.tex
 pLaTeX2e <2018-04-01>+1 (based on LaTeX2e <2018-04-01> patch level 2)
 Babel <3.18> and hyphenation patterns for 84 language(s) loaded.
 (/usr/local/texlive/2018/texmf-dist/tex/platex/jsclasses/jsarticle.cls
@@ -161,79 +161,110 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 No file report.aux.
 \openout1 = `report.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 34.
-LaTeX Font Info:    ... okay on input line 34.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 34.
-LaTeX Font Info:    ... okay on input line 34.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 34.
-LaTeX Font Info:    ... okay on input line 34.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 34.
-LaTeX Font Info:    ... okay on input line 34.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 34.
-LaTeX Font Info:    ... okay on input line 34.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 34.
-LaTeX Font Info:    ... okay on input line 34.
-LaTeX Font Info:    Checking defaults for JY1/mc/m/n on input line 34.
-LaTeX Font Info:    ... okay on input line 34.
-LaTeX Font Info:    Checking defaults for JT1/mc/m/n on input line 34.
-LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for JY1/mc/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for JT1/mc/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
 \c@lstlisting=\count114
 LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
-(Font)              scaled to size 16.60605pt on input line 35.
+(Font)              scaled to size 16.60605pt on input line 32.
 LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
-(Font)              scaled to size 16.60605pt on input line 35.
+(Font)              scaled to size 16.60605pt on input line 32.
 LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
-(Font)              scaled to size 11.53198pt on input line 35.
+(Font)              scaled to size 11.53198pt on input line 32.
 LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
-(Font)              scaled to size 11.53198pt on input line 35.
+(Font)              scaled to size 11.53198pt on input line 32.
 LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
-(Font)              scaled to size 5.76599pt on input line 35.
-[1
+(Font)              scaled to size 5.76599pt on input line 32.
+LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
+(Font)              scaled to size 11.53198pt on input line 33.
+LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
+(Font)              scaled to size 11.53198pt on input line 33.
+LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
+(Font)              scaled to size 9.60999pt on input line 39.
+LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
+(Font)              scaled to size 9.60999pt on input line 39.
+LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
+(Font)              scaled to size 8.64899pt on input line 41.
+LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
+(Font)              scaled to size 8.64899pt on input line 41.
+LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
+(Font)              scaled to size 6.72699pt on input line 42.
+LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
+(Font)              scaled to size 6.72699pt on input line 42.
+LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
+(Font)              scaled to size 8.64899pt on input line 42.
+LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
+(Font)              scaled to size 8.64899pt on input line 42.
+File: ../img/kadai_1_value.png Graphic file (type bmp)
+<../img/kadai_1_value.png>
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
+(Font)              scaled to size 4.805pt on input line 71.
+File: ../img/kadai_2.png Graphic file (type bmp)
+<../img/kadai_2.png>
+ [1
+
 
 ]
-LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
-(Font)              scaled to size 13.83836pt on input line 40.
-LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
-(Font)              scaled to size 13.83836pt on input line 40.
-LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
-(Font)              scaled to size 13.83836pt on input line 40.
-LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
-(Font)              scaled to size 13.83836pt on input line 40.
-LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
-(Font)              scaled to size 11.53198pt on input line 52.
-LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
-(Font)              scaled to size 11.53198pt on input line 52.
- [2
+File: ../img/kadai_3.png Graphic file (type bmp)
+<../img/kadai_3.png>
+ [2]
+Overfull \hbox (40.9425pt too wide) in alignment at lines 163--170
+ [][][] []
+ []
 
-] [3] [4]
-LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
-(Font)              scaled to size 8.64899pt on input line 147.
-LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
-(Font)              scaled to size 8.64899pt on input line 147.
-LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
-(Font)              scaled to size 9.60999pt on input line 147.
-LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
-(Font)              scaled to size 9.60999pt on input line 147.
-LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
-(Font)              scaled to size 6.72699pt on input line 148.
-LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
-(Font)              scaled to size 6.72699pt on input line 148.
-LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
-(Font)              scaled to size 8.64899pt on input line 148.
-LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
-(Font)              scaled to size 8.64899pt on input line 148.
- [5] [6] [7] [8] [9] [10] (./report.aux)
+
+Overfull \hbox (9.37549pt too wide) in alignment at lines 173--177
+ [][][] []
+ []
+
+File: ../img/Figure_2.png Graphic file (type bmp)
+<../img/Figure_2.png>
+File: ../img/kadai_5.png Graphic file (type bmp)
+<../img/kadai_5.png>
+[3]
+File: ../img/result_fig.png Graphic file (type bmp)
+<../img/result_fig.png>
+File: ../img/result_hist.png Graphic file (type bmp)
+<../img/result_hist.png>
+File: ../img/kadai_7.png Graphic file (type bmp)
+<../img/kadai_7.png>
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [4]
+File: ../img/kadai_7.png Graphic file (type bmp)
+<../img/kadai_7.png>
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [5] (./report.aux)
 
 LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
  ) 
 Here is how much of TeX's memory you used:
- 3198 strings out of 493281
- 40256 string characters out of 6145041
- 219469 words of memory out of 5000000
- 7133 multiletter control sequences out of 15000+600000
- 15782 words of font info for 72 fonts, out of 8000000 for 9000
+ 3226 strings out of 493281
+ 40817 string characters out of 6145041
+ 196429 words of memory out of 5000000
+ 7148 multiletter control sequences out of 15000+600000
+ 15466 words of font info for 70 fonts, out of 8000000 for 9000
  934 hyphenation exceptions out of 8191
- 27i,6n,32p,327b,1704s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 27i,8n,32p,294b,1696s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on report.dvi (10 pages, 37132 bytes).
+Output written on report.dvi (5 pages, 20404 bytes).
